@@ -1,0 +1,47 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "declaration": false,
+    "declarationMap": false,
+    "baseUrl": ".",
+    "paths": {
+      "@vidsnapai/types": ["packages/types/src/index.ts"],
+      "@vidsnapai/types/*": ["packages/types/src/*"],
+      "@vidsnapai/validation": ["packages/validation/src/index.ts"],
+      "@vidsnapai/validation/*": ["packages/validation/src/*"],
+      "@vidsnapai/config": ["packages/config/src/index.ts"],
+      "@vidsnapai/config/*": ["packages/config/src/*"],
+      "@vidsnapai/database/schema": ["packages/database/src/schema/index.ts"],
+      "@vidsnapai/database": ["packages/database/src/index.ts"],
+      "@vidsnapai/database/*": ["packages/database/src/*"],
+      "@vidsnapai/ai": ["packages/ai/src/index.ts"],
+      "@vidsnapai/ai/*": ["packages/ai/src/*"],
+      "@vidsnapai/media": ["packages/media/src/index.ts"],
+      "@vidsnapai/media/*": ["packages/media/src/*"],
+      "@vidsnapai/video": ["packages/video/src/index.ts"],
+      "@vidsnapai/video/*": ["packages/video/src/*"],
+      "@vidsnapai/brand": ["packages/brand/src/index.ts"],
+      "@vidsnapai/brand/*": ["packages/brand/src/*"],
+      "@vidsnapai/campaign": ["packages/campaign/src/index.ts"],
+      "@vidsnapai/campaign/*": ["packages/campaign/src/*"],
+      "@vidsnapai/content": ["packages/content/src/index.ts"],
+      "@vidsnapai/content/*": ["packages/content/src/*"],
+      "@vidsnapai/voice": ["packages/voice/src/index.ts"],
+      "@vidsnapai/voice/*": ["packages/voice/src/*"],
+      "@vidsnapai/captions": ["packages/captions/src/index.ts"],
+      "@vidsnapai/captions/*": ["packages/captions/src/*"],
+      "@vidsnapai/animation": ["packages/animation/src/index.ts"],
+      "@vidsnapai/animation/*": ["packages/animation/src/*"],
+      "@vidsnapai/audio": ["packages/audio/src/index.ts"],
+      "@vidsnapai/audio/*": ["packages/audio/src/*"],
+      "@vidsnapai/storage": ["packages/storage/src/index.ts"],
+      "@vidsnapai/storage/*": ["packages/storage/src/*"]
+    }
+  },
+  "include": [
+    "tests/**/*.ts",
+    "apps/api/src/**/*.ts",
+    "vitest.config.ts"
+  ]
+}

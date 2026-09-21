@@ -1,0 +1,18 @@
+{
+  "reelPlanId": "one8-qa-reel-30s",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "duration": 30,
+  "sceneCount": 4,
+  "productAssetCount": 0,
+  "brandAssetCount": 4,
+  "voicePresent": true,
+  "musicPresent": true,
+  "captionPresent": false,
+  "visualVariance": 42.62,
+  "uniqueColors": 5206,
+  "blankFrameDetected": false,
+  "productPresence": true,
+  "fallbackUsed": false,
+  "renderWarnings": []
+}

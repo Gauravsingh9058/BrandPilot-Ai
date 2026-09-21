@@ -1,0 +1,307 @@
+{
+  "reelPlan": {
+    "id": "reel-motion-001",
+    "contentJobId": "job-motion-001",
+    "brandId": "brand-one8-motion",
+    "contentPlanId": "plan-motion-001",
+    "workspaceId": "ws-motion-qa-001",
+    "version": 1,
+    "title": "One8 Velocity Pro Launch Reel",
+    "concept": {
+      "title": "Velocity Pro Launch",
+      "concept": "High-energy sneaker showcase",
+      "objective": "CONVERSION",
+      "targetAudience": "Athletes & Runners",
+      "corePromise": "Unstoppable propulsion",
+      "emotionalAngle": "Empowerment",
+      "messagingAngle": "Speed & Tech",
+      "contentPillar": "Product Showcase",
+      "funnelStage": "CONVERSION"
+    },
+    "objective": "CONVERSION",
+    "audience": "Athletes",
+    "funnelStage": "CONVERSION",
+    "contentPillar": "Product Showcase",
+    "durationSeconds": 4,
+    "aspectRatio": "9:16",
+    "platform": "INSTAGRAM",
+    "format": "REEL",
+    "hook": {
+      "type": "STATEMENT",
+      "text": "Engineered for Pure Speed",
+      "visualIntent": "Hook with product reveal",
+      "deliveryStyle": "Energetic",
+      "durationSeconds": 2
+    },
+    "narrative": "Showcase revolutionary carbon propulsion",
+    "script": [
+      {
+        "id": "s1",
+        "purpose": "Hook",
+        "text": "Engineered for Pure Speed",
+        "estimatedDuration": 2,
+        "deliveryStyle": "Bold",
+        "emotionalTone": "Excited"
+      },
+      {
+        "id": "s2",
+        "purpose": "CTA",
+        "text": "Get Yours Today at one8.com",
+        "estimatedDuration": 2,
+        "deliveryStyle": "Decisive",
+        "emotionalTone": "Action"
+      }
+    ],
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "durationSeconds": 2,
+        "purpose": "Hook & Reveal",
+        "narration": "Engineered for Pure Speed",
+        "onScreenText": "Engineered for Pure Speed",
+        "visualType": "PRODUCT_SHOWCASE",
+        "subject": "Velocity Pro Sneaker",
+        "environment": "Studio",
+        "composition": "Hero Center",
+        "camera": "SLOW_PUSH",
+        "lighting": "Spotlight",
+        "mood": "High Energy",
+        "transition": "CROSSFADE",
+        "animationIntent": "Hero Reveal",
+        "assetRequirement": "Product Image",
+        "productReference": "prod-one8-sneaker-01",
+        "background": {
+          "type": "AMBIENT_BLUR"
+        },
+        "product": {
+          "visible": true,
+          "animationPreset": "CINEMATIC_PUSH_IN"
+        }
+      },
+      {
+        "sceneNumber": 2,
+        "durationSeconds": 2,
+        "purpose": "CTA End Card",
+        "narration": "Get Yours Today",
+        "onScreenText": "SHOP NOW • ONE8.COM",
+        "visualType": "CTA",
+        "subject": "Logo & Sneaker",
+        "environment": "Studio",
+        "composition": "Product Top, CTA Bottom",
+        "camera": "STATIC",
+        "lighting": "Clean Studio",
+        "mood": "Decisive",
+        "transition": "CUT",
+        "animationIntent": "CTA Pulse",
+        "assetRequirement": "Logo & Product",
+        "productReference": "prod-one8-sneaker-01",
+        "background": {
+          "type": "AMBIENT_BLUR"
+        },
+        "product": {
+          "visible": true,
+          "animationPreset": "PRODUCT_TO_CTA"
+        }
+      }
+    ],
+    "visualDirection": {
+      "style": "Dynamic Commercial",
+      "mood": "High Energy",
+      "colorIntent": "#0F172A primary with #E11D48 accent",
+      "lightingIntent": "Sharp spotlight",
+      "composition": "Vertical 9:16 safe zones",
+      "cameraLanguage": "Fluid motions",
+      "pacing": "Rapid",
+      "visualHierarchy": "Product 1st, text 2nd, logo 3rd",
+      "brandIntegration": "One8 logo overlay",
+      "productEmphasis": "Max visibility"
+    },
+    "voiceDirection": {
+      "style": "Energetic",
+      "pace": "Fast",
+      "tone": "Confident"
+    },
+    "captionDirection": {
+      "style": "Pop",
+      "placement": "Center-bottom",
+      "density": "Low",
+      "fontEmphasis": "Bold",
+      "animation": "POP"
+    },
+    "animationDirection": {
+      "energy": "HIGH",
+      "style": "Dynamic",
+      "textAnimation": "POP",
+      "visualTransitions": "CROSSFADE",
+      "elementMotion": "SMOOTH"
+    },
+    "audioDirection": {
+      "musicMood": "High-energy electronic",
+      "soundEffects": "Swoosh",
+      "pacing": "Fast",
+      "mixBalance": "Voice 100%, Music 25%"
+    },
+    "cta": {
+      "type": "SHOP_NOW",
+      "text": "SHOP NOW • ONE8.COM",
+      "visualTreatment": "Pill Button",
+      "placement": "bottom"
+    },
+    "productionMetadata": {
+      "totalScenes": 2,
+      "estimatedWordCount": 15,
+      "targetDurationSeconds": 4,
+      "calculatedDurationSeconds": 4,
+      "generatedBy": "ReelDirectorAI",
+      "contentJobId": "job-motion-001",
+      "generatedAt": "2026-09-21T10:03:49.335Z"
+    },
+    "status": "QUEUED",
+    "createdAt": "2026-09-21T10:03:49.335Z",
+    "updatedAt": "2026-09-21T10:03:49.335Z"
+  },
+  "spec": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "totalDurationSeconds": 4,
+    "aspectRatio": "9:16",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "startTime": 0,
+        "endTime": 2,
+        "duration": 2,
+        "mediaUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_motion_test_ifbMcJ\\product_sneaker.png",
+        "mediaType": "VIDEO",
+        "backgroundColor": "#0F172A",
+        "camera": [
+          {
+            "type": "SLOW_PUSH",
+            "startTime": 0,
+            "duration": 2,
+            "intensity": "HIGH",
+            "easing": "CUBIC_OUT"
+          }
+        ],
+        "textAnimations": [
+          {
+            "targetText": "Engineered for Pure Speed",
+            "startTime": 0,
+            "duration": 2,
+            "entrance": "WORD_POP",
+            "easing": "SPRING",
+            "emphasisWords": [
+              "Speed"
+            ]
+          }
+        ],
+        "productAnimations": [
+          {
+            "productId": "prod-one8-sneaker-01",
+            "revealType": "HERO_REVEAL",
+            "startTime": 0,
+            "duration": 2,
+            "emphasis": true
+          }
+        ],
+        "logoAnimations": [
+          {
+            "assetId": "logo",
+            "startTime": 0,
+            "duration": 2,
+            "style": "SLIDE",
+            "easing": "QUAD_OUT"
+          }
+        ],
+        "syncCues": [],
+        "background": {
+          "type": "AMBIENT_BLUR",
+          "primaryColor": "#0F172A",
+          "secondaryColor": "#E11D48"
+        },
+        "product": {
+          "visible": true,
+          "animationPreset": "CINEMATIC_PUSH_IN"
+        }
+      },
+      {
+        "sceneNumber": 2,
+        "startTime": 2,
+        "endTime": 4,
+        "duration": 2,
+        "mediaUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_motion_test_ifbMcJ\\product_sneaker.png",
+        "mediaType": "VIDEO",
+        "backgroundColor": "#0F172A",
+        "camera": [
+          {
+            "type": "STATIC",
+            "startTime": 2,
+            "duration": 2,
+            "intensity": "LOW",
+            "easing": "LINEAR"
+          }
+        ],
+        "textAnimations": [
+          {
+            "targetText": "SHOP NOW • ONE8.COM",
+            "startTime": 2,
+            "duration": 2,
+            "entrance": "EMPHASIS_PULSE",
+            "easing": "SPRING",
+            "emphasisWords": [
+              "SHOP NOW"
+            ]
+          }
+        ],
+        "productAnimations": [
+          {
+            "productId": "prod-one8-sneaker-01",
+            "revealType": "HERO_REVEAL",
+            "startTime": 2,
+            "duration": 2,
+            "emphasis": true
+          }
+        ],
+        "logoAnimations": [
+          {
+            "assetId": "logo",
+            "startTime": 2,
+            "duration": 2,
+            "style": "SCALE",
+            "easing": "QUAD_OUT"
+          }
+        ],
+        "syncCues": [],
+        "background": {
+          "type": "AMBIENT_BLUR",
+          "primaryColor": "#0F172A",
+          "secondaryColor": "#E11D48"
+        },
+        "product": {
+          "visible": true,
+          "animationPreset": "CINEMATIC_PUSH_IN"
+        }
+      }
+    ],
+    "audio": {
+      "voiceTrackUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_motion_test_ifbMcJ\\voice.mp3",
+      "musicTrackUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_motion_test_ifbMcJ\\music.mp3",
+      "sfxTracks": [],
+      "ducking": {
+        "enabled": true,
+        "musicAttenuationDb": 14,
+        "attackMs": 200,
+        "releaseMs": 500
+      }
+    },
+    "brand": {
+      "primaryColor": "#0F172A",
+      "secondaryColor": "#E11D48",
+      "accentColor": "#F59E0B",
+      "fontFamily": "Inter, sans-serif",
+      "logoUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_motion_test_ifbMcJ\\brand_logo.png"
+    },
+    "reducedMotion": false
+  }
+}

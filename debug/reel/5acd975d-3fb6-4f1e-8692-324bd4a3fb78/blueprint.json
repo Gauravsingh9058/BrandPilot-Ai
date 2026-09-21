@@ -1,0 +1,67 @@
+{
+  "reelPlan": {
+    "id": "5acd975d-3fb6-4f1e-8692-324bd4a3fb78",
+    "workspaceId": "20928673-358e-4ec1-9b0f-0d3a986c671c",
+    "brandId": "d3e93a53-51c3-40a1-9e07-73097b2fcfe2",
+    "title": "One8 Energetic Performance Reel",
+    "concept": {
+      "title": "One8 Energetic Performance Reel",
+      "caption": "Elevate your everyday hustle with One8",
+      "hashtags": [
+        "#vidsnapai",
+        "#one8"
+      ]
+    },
+    "durationSeconds": 3,
+    "status": "QUALITY_CHECK",
+    "createdAt": "2026-09-21T10:02:58.735Z",
+    "updatedAt": "2026-09-21T10:02:58.735Z"
+  },
+  "spec": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "totalDurationSeconds": 3,
+    "aspectRatio": "9:16",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "startTime": 0,
+        "endTime": 3,
+        "duration": 3,
+        "mediaType": "VIDEO",
+        "backgroundColor": "#FF4500",
+        "camera": [],
+        "textAnimations": [],
+        "productAnimations": [],
+        "logoAnimations": [],
+        "syncCues": [],
+        "background": {
+          "type": "AMBIENT_BLUR",
+          "primaryColor": "#FF4500",
+          "secondaryColor": "#1A1A1A"
+        },
+        "product": {
+          "visible": true,
+          "animationPreset": "CINEMATIC_PUSH_IN"
+        }
+      }
+    ],
+    "audio": {
+      "sfxTracks": [],
+      "ducking": {
+        "enabled": false,
+        "musicAttenuationDb": 14,
+        "attackMs": 200,
+        "releaseMs": 500
+      }
+    },
+    "brand": {
+      "primaryColor": "#FF4500",
+      "secondaryColor": "#1A1A1A",
+      "accentColor": "#FFD700",
+      "fontFamily": "Montserrat"
+    },
+    "reducedMotion": false
+  }
+}

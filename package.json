@@ -1,0 +1,29 @@
+{
+  "name": "vidsnapai-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm --parallel --filter ./apps/* dev",
+    "dev:api": "pnpm --filter @vidsnapai/api dev",
+    "dev:web": "pnpm --filter @vidsnapai/web dev",
+    "dev:worker": "pnpm --filter @vidsnapai/worker dev",
+    "build": "pnpm --filter \"./packages/*\" --filter \"./apps/*\" build",
+    "typecheck": "pnpm --recursive exec tsc --noEmit",
+    "lint": "eslint . --max-warnings 0",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:generate": "pnpm --filter @vidsnapai/database db:generate",
+    "db:migrate": "pnpm --filter @vidsnapai/database db:migrate"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "@types/node": "^22.13.1",
+    "eslint": "^9.20.0",
+    "globals": "^15.14.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.24.0",
+    "vitest": "^3.0.5"
+  }
+}

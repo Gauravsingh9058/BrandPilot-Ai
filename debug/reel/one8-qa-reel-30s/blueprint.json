@@ -1,0 +1,226 @@
+{
+  "reelPlan": {
+    "id": "one8-qa-reel-30s",
+    "workspaceId": "ws-one8-qa",
+    "brandId": "brand-one8",
+    "contentJobId": "job-one8-launch",
+    "contentPlanId": "cp-one8-30d",
+    "title": "One8 Active Performance Launch Reel",
+    "durationSeconds": 30,
+    "aspectRatio": "9:16",
+    "platform": "INSTAGRAM_REELS",
+    "format": "TALKING_HEAD_BROLL",
+    "hook": {
+      "type": "QUESTION",
+      "text": "Are you pushing your limits every single day?",
+      "visualIntent": "Hero runner in motion with One8 gear",
+      "deliveryStyle": "ENERGETIC",
+      "durationSeconds": 7.5
+    },
+    "cta": "Shop One8 Active Today",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "durationSeconds": 7.5,
+        "purpose": "Hook",
+        "narration": "Are you pushing your limits every single day?",
+        "onScreenText": "UNLEASH YOUR POWER - ONE8 ACTIVE",
+        "visualType": "PRODUCT_SHOWCASE",
+        "assetRequirement": "Hero athlete training in One8 athletic wear"
+      },
+      {
+        "sceneNumber": 2,
+        "durationSeconds": 7.5,
+        "purpose": "Problem/Agitation",
+        "narration": "Standard gear slows you down when intensity rises.",
+        "onScreenText": "DESIGNED FOR PEAK PERFORMANCE",
+        "visualType": "DEMONSTRATION",
+        "assetRequirement": "Breathable fabric close-up with sweat-wicking tech"
+      },
+      {
+        "sceneNumber": 3,
+        "durationSeconds": 7.5,
+        "purpose": "Solution/Features",
+        "narration": "Engineered with ultra-light flex fabric and bold style.",
+        "onScreenText": "FEATHERLIGHT FLEX + PRO BREATHABILITY",
+        "visualType": "LIFESTYLE",
+        "assetRequirement": "Athlete sprinting across urban track"
+      },
+      {
+        "sceneNumber": 4,
+        "durationSeconds": 7.5,
+        "purpose": "CTA",
+        "narration": "Upgrade your training wardrobe now at one8.com.",
+        "onScreenText": "SHOP ONE8 ACTIVE - LINK IN BIO",
+        "visualType": "CTA",
+        "assetRequirement": "One8 logo reveal and official product collection"
+      }
+    ],
+    "status": "QUALITY_CHECK",
+    "createdAt": "2026-09-21T10:01:38.882Z",
+    "updatedAt": "2026-09-21T10:01:38.882Z"
+  },
+  "spec": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "totalDurationSeconds": 30,
+    "aspectRatio": "9:16",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "startTime": 0,
+        "endTime": 7.5,
+        "duration": 7.5,
+        "mediaUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_3yJQkO\\scene_1_asset.png",
+        "mediaType": "IMAGE",
+        "backgroundColor": "#1E293B",
+        "camera": [
+          {
+            "type": "SLOW_PUSH",
+            "intensity": "MEDIUM"
+          }
+        ],
+        "textAnimations": [
+          {
+            "targetText": "UNLEASH YOUR POWER - ONE8 ACTIVE",
+            "startTime": 0.5,
+            "duration": 6.5
+          }
+        ],
+        "productAnimations": [],
+        "logoAnimations": [],
+        "syncCues": [],
+        "background": {
+          "type": "AMBIENT_BLUR",
+          "primaryColor": "#1E293B",
+          "secondaryColor": "#3B82F6"
+        },
+        "product": {
+          "visible": true,
+          "animationPreset": "CINEMATIC_PUSH_IN"
+        }
+      },
+      {
+        "sceneNumber": 2,
+        "startTime": 7.5,
+        "endTime": 15,
+        "duration": 7.5,
+        "mediaUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_3yJQkO\\scene_2_asset.png",
+        "mediaType": "IMAGE",
+        "backgroundColor": "#1E293B",
+        "camera": [
+          {
+            "type": "DYNAMIC_PULL",
+            "intensity": "MEDIUM"
+          }
+        ],
+        "textAnimations": [
+          {
+            "targetText": "DESIGNED FOR PEAK PERFORMANCE",
+            "startTime": 8,
+            "duration": 6.5
+          }
+        ],
+        "productAnimations": [],
+        "logoAnimations": [],
+        "syncCues": [],
+        "background": {
+          "type": "AMBIENT_BLUR",
+          "primaryColor": "#1E293B",
+          "secondaryColor": "#3B82F6"
+        },
+        "product": {
+          "visible": true,
+          "animationPreset": "CINEMATIC_PUSH_IN"
+        }
+      },
+      {
+        "sceneNumber": 3,
+        "startTime": 15,
+        "endTime": 22.5,
+        "duration": 7.5,
+        "mediaUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_3yJQkO\\scene_3_asset.png",
+        "mediaType": "IMAGE",
+        "backgroundColor": "#1E293B",
+        "camera": [
+          {
+            "type": "SLOW_PUSH",
+            "intensity": "MEDIUM"
+          }
+        ],
+        "textAnimations": [
+          {
+            "targetText": "FEATHERLIGHT FLEX + PRO BREATHABILITY",
+            "startTime": 15.5,
+            "duration": 6.5
+          }
+        ],
+        "productAnimations": [],
+        "logoAnimations": [],
+        "syncCues": [],
+        "background": {
+          "type": "AMBIENT_BLUR",
+          "primaryColor": "#1E293B",
+          "secondaryColor": "#3B82F6"
+        },
+        "product": {
+          "visible": true,
+          "animationPreset": "CINEMATIC_PUSH_IN"
+        }
+      },
+      {
+        "sceneNumber": 4,
+        "startTime": 22.5,
+        "endTime": 30,
+        "duration": 7.5,
+        "mediaUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_3yJQkO\\scene_4_asset.png",
+        "mediaType": "IMAGE",
+        "backgroundColor": "#1E293B",
+        "camera": [
+          {
+            "type": "DYNAMIC_PULL",
+            "intensity": "MEDIUM"
+          }
+        ],
+        "textAnimations": [
+          {
+            "targetText": "SHOP ONE8 ACTIVE - LINK IN BIO",
+            "startTime": 23,
+            "duration": 6.5
+          }
+        ],
+        "productAnimations": [],
+        "logoAnimations": [],
+        "syncCues": [],
+        "background": {
+          "type": "AMBIENT_BLUR",
+          "primaryColor": "#1E293B",
+          "secondaryColor": "#3B82F6"
+        },
+        "product": {
+          "visible": true,
+          "animationPreset": "CINEMATIC_PUSH_IN"
+        }
+      }
+    ],
+    "audio": {
+      "voiceTrackUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_3yJQkO\\voice.mp3",
+      "musicTrackUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_3yJQkO\\music.mp3",
+      "sfxTracks": [],
+      "ducking": {
+        "enabled": true,
+        "musicAttenuationDb": 14,
+        "attackMs": 200,
+        "releaseMs": 500
+      }
+    },
+    "brand": {
+      "primaryColor": "#1E293B",
+      "secondaryColor": "#3B82F6",
+      "accentColor": "#FF4500",
+      "fontFamily": "Montserrat"
+    },
+    "reducedMotion": false
+  }
+}

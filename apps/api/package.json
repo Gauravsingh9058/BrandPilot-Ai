@@ -1,0 +1,45 @@
+{
+  "name": "@vidsnapai/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc --build",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@vidsnapai/ai": "workspace:*",
+    "@vidsnapai/animation": "workspace:*",
+    "@vidsnapai/audio": "workspace:*",
+    "@vidsnapai/brand": "workspace:*",
+    "@vidsnapai/campaign": "workspace:*",
+    "@vidsnapai/captions": "workspace:*",
+    "@vidsnapai/config": "workspace:*",
+    "@vidsnapai/content": "workspace:*",
+    "@vidsnapai/database": "workspace:*",
+    "@vidsnapai/media": "workspace:*",
+    "@vidsnapai/storage": "workspace:*",
+    "@vidsnapai/types": "workspace:*",
+    "@vidsnapai/validation": "workspace:*",
+    "@vidsnapai/video": "workspace:*",
+    "@vidsnapai/voice": "workspace:*",
+    "bcryptjs": "^3.0.2",
+    "bullmq": "^5.41.6",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "ioredis": "^5.6.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cookie-parser": "^1.4.8",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  }
+}

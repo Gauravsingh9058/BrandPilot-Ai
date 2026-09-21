@@ -1,0 +1,29 @@
+{
+  "id": "pkg-1",
+  "reelPlanId": "5acd975d-3fb6-4f1e-8692-324bd4a3fb78",
+  "workspaceId": "20928673-358e-4ec1-9b0f-0d3a986c671c",
+  "brandId": "d3e93a53-51c3-40a1-9e07-73097b2fcfe2",
+  "status": "COMPILED",
+  "packageData": {
+    "version": "1.0",
+    "assets": [
+      {
+        "id": "asset-prod-1",
+        "type": "IMAGE",
+        "role": "PRODUCT",
+        "localPath": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_p8_314tex\\product.png",
+        "storageUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_p8_314tex\\product.png"
+      }
+    ],
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "durationSeconds": 3,
+        "visualPrompt": "High energy fitness hero shot",
+        "voiceoverText": "Transform your limits today."
+      }
+    ]
+  },
+  "createdAt": "2026-09-21T10:02:58.735Z",
+  "updatedAt": "2026-09-21T10:02:58.735Z"
+}

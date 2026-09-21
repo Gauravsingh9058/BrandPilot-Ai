@@ -1,0 +1,39 @@
+{
+  "name": "@vidsnapai/video",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@vidsnapai/ai": "workspace:*",
+    "@vidsnapai/animation": "workspace:*",
+    "@vidsnapai/audio": "workspace:*",
+    "@vidsnapai/brand": "workspace:*",
+    "@vidsnapai/campaign": "workspace:*",
+    "@vidsnapai/captions": "workspace:*",
+    "@vidsnapai/content": "workspace:*",
+    "@vidsnapai/database": "workspace:*",
+    "@vidsnapai/media": "workspace:*",
+    "@vidsnapai/storage": "workspace:*",
+    "@vidsnapai/types": "workspace:*",
+    "@vidsnapai/validation": "workspace:*",
+    "@vidsnapai/voice": "workspace:*",
+    "drizzle-orm": "^0.39.3",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}

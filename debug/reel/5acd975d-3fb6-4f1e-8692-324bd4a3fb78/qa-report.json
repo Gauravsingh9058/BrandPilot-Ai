@@ -1,0 +1,18 @@
+{
+  "reelPlanId": "5acd975d-3fb6-4f1e-8692-324bd4a3fb78",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "duration": 3,
+  "sceneCount": 1,
+  "productAssetCount": 1,
+  "brandAssetCount": 1,
+  "voicePresent": false,
+  "musicPresent": false,
+  "captionPresent": false,
+  "visualVariance": 65.17,
+  "uniqueColors": 16683,
+  "blankFrameDetected": false,
+  "productPresence": true,
+  "fallbackUsed": false,
+  "renderWarnings": []
+}

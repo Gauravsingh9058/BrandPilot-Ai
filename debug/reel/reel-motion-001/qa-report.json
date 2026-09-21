@@ -1,0 +1,18 @@
+{
+  "reelPlanId": "reel-motion-001",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "duration": 4,
+  "sceneCount": 2,
+  "productAssetCount": 2,
+  "brandAssetCount": 2,
+  "voicePresent": true,
+  "musicPresent": true,
+  "captionPresent": false,
+  "visualVariance": 23.75,
+  "uniqueColors": 885,
+  "blankFrameDetected": false,
+  "productPresence": true,
+  "fallbackUsed": false,
+  "renderWarnings": []
+}
