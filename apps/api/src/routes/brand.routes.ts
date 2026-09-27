@@ -10,6 +10,7 @@ import {
 } from '@vidsnapai/validation';
 import { getDatabase, WorkspaceRepository } from '@vidsnapai/database';
 import { createAIProvider } from '@vidsnapai/ai';
+import { createStorageProvider } from '@vidsnapai/storage';
 import { BrandService } from '@vidsnapai/brand';
 import { getConfig } from '@vidsnapai/config';
 import { requireAuth } from '../middleware/auth.js';
@@ -22,7 +23,8 @@ export const brandRouter: Router = Router();
 const config = getConfig();
 const db = getDatabase();
 const aiProvider = createAIProvider({ apiKey: config.GEMINI_API_KEY });
-const brandService = new BrandService(db, aiProvider);
+const storageProvider = createStorageProvider();
+const brandService = new BrandService(db, aiProvider, { storageProvider });
 const workspaceRepo = new WorkspaceRepository(db);
 
 // Helper to resolve the active workspace ID for requests without brandId
@@ -456,10 +458,17 @@ brandRouter.patch('/:brandId/assets/:assetId/assign', requireBrandAccess(['OWNER
 brandRouter.delete('/:brandId/assets/:assetId', requireBrandAccess(['OWNER', 'ADMIN']), async (req: Request, res: Response, next: NextFunction) => {
   try {
     const assetId = Array.isArray(req.params.assetId) ? req.params.assetId[0] : req.params.assetId;
-    const success = await brandService.deleteAsset(assetId, req.brand!.id, req.activeWorkspaceId!);
+    const force = req.query.force === 'true';
+    const result = await brandService.deleteAsset(assetId, req.brand!.id, req.activeWorkspaceId!, { force });
 
-    if (!success) {
-      throw new AppError('Asset not found or delete failed', 404, 'DELETE_FAILED');
+    if (!result.success) {
+      if (result.code === 'ASSET_NOT_FOUND' || result.code === 'BRAND_NOT_FOUND') {
+        throw new AppError(result.error || 'Asset not found', 404, result.code);
+      }
+      if (result.code === 'ASSET_IN_USE') {
+        throw new AppError(result.error || 'Asset is currently in use', 409, result.code);
+      }
+      throw new AppError(result.error || 'Delete failed', 400, 'DELETE_FAILED');
     }
 
     const response: ApiResponse = {

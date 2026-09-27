@@ -63,10 +63,23 @@ export class LocalStorageProvider implements StorageProvider {
     const targetDir = path.dirname(targetPath);
 
     if (!fs.existsSync(targetDir)) {
-      fs.mkdirSync(targetDir, { recursive: true });
+      await fs.promises.mkdir(targetDir, { recursive: true });
     }
 
-    await fs.promises.writeFile(targetPath, buffer);
+    let writeErr: unknown;
+    for (let attempt = 0; attempt < 3; attempt++) {
+      try {
+        await fs.promises.writeFile(targetPath, buffer);
+        writeErr = null;
+        break;
+      } catch (err) {
+        writeErr = err;
+        await new Promise((r) => setTimeout(r, 50 * (attempt + 1)));
+      }
+    }
+    if (writeErr) {
+      throw writeErr;
+    }
 
     const normalizedKey = cleanKey.replace(/\\/g, '/');
     const url = `${this.publicUrlPrefix}/${normalizedKey}`;

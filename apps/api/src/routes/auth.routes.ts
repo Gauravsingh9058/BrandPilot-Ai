@@ -92,7 +92,24 @@ authRouter.post('/logout', requireAuth, async (req: Request, res: Response, next
 authRouter.get('/me', requireAuth, async (req: Request, res: Response, next: NextFunction) => {
   try {
     const user = req.user!;
-    const workspaces = await workspaceService.listWorkspacesForUser(user.id);
+    let workspaces = await workspaceService.listWorkspacesForUser(user.id);
+
+    // Auto-heal: If user has no workspaces, ensure their default workspace is created and linked
+    if (!workspaces || workspaces.length === 0) {
+      const defaultWorkspaceName = `${(user.name || 'Personal').split(' ')[0]}'s Workspace`;
+      const createdWs = await workspaceService.createWorkspace(user.id, { name: defaultWorkspaceName });
+      workspaces = [
+        {
+          id: createdWs.id,
+          name: createdWs.name,
+          ownerId: createdWs.ownerId,
+          createdAt: createdWs.createdAt,
+          updatedAt: createdWs.updatedAt,
+          role: 'OWNER',
+          memberCount: 1
+        }
+      ];
+    }
 
     const response: ApiResponse = {
       success: true,

@@ -164,11 +164,11 @@
         "calculatedDurationSeconds": 4,
         "generatedBy": "ReelDirectorAI",
         "contentJobId": "job-motion-001",
-        "generatedAt": "2026-09-21T10:03:49.335Z"
+        "generatedAt": "2026-09-27T10:33:41.751Z"
       },
       "status": "QUEUED",
-      "createdAt": "2026-09-21T10:03:49.335Z",
-      "updatedAt": "2026-09-21T10:03:49.335Z"
+      "createdAt": "2026-09-27T10:33:41.751Z",
+      "updatedAt": "2026-09-27T10:33:41.751Z"
     },
     "assets": [
       {
@@ -177,13 +177,13 @@
         "workspaceId": "ws-motion-qa-001",
         "brandId": "brand-one8-motion",
         "assetType": "PRODUCT_IMAGE",
-        "sourceUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_motion_test_ifbMcJ\\product_sneaker.png",
-        "previewUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_motion_test_ifbMcJ\\product_sneaker.png",
+        "sourceUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_motion_test_JzfRcb\\product_sneaker.png",
+        "previewUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_motion_test_JzfRcb\\product_sneaker.png",
         "sceneNumber": 1,
         "role": "HERO",
         "status": "READY",
-        "createdAt": "2026-09-21T10:03:49.335Z",
-        "updatedAt": "2026-09-21T10:03:49.335Z"
+        "createdAt": "2026-09-27T10:33:41.751Z",
+        "updatedAt": "2026-09-27T10:33:41.751Z"
       },
       {
         "id": "asset-prod-hero-2",
@@ -191,16 +191,16 @@
         "workspaceId": "ws-motion-qa-001",
         "brandId": "brand-one8-motion",
         "assetType": "PRODUCT_IMAGE",
-        "sourceUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_motion_test_ifbMcJ\\product_sneaker.png",
-        "previewUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_motion_test_ifbMcJ\\product_sneaker.png",
+        "sourceUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_motion_test_JzfRcb\\product_sneaker.png",
+        "previewUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_motion_test_JzfRcb\\product_sneaker.png",
         "sceneNumber": 2,
         "role": "HERO",
         "status": "READY",
-        "createdAt": "2026-09-21T10:03:49.335Z",
-        "updatedAt": "2026-09-21T10:03:49.335Z"
+        "createdAt": "2026-09-27T10:33:41.751Z",
+        "updatedAt": "2026-09-27T10:33:41.751Z"
       }
     ]
   },
-  "createdAt": "2026-09-21T10:03:49.335Z",
-  "updatedAt": "2026-09-21T10:03:49.335Z"
+  "createdAt": "2026-09-27T10:33:41.751Z",
+  "updatedAt": "2026-09-27T10:33:41.751Z"
 }

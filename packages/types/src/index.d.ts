@@ -93,6 +93,7 @@ export interface AIGenerationOptions {
     temperature?: number;
     maxTokens?: number;
     systemInstruction?: string;
+    timeoutMs?: number;
 }
 export interface AITextResponse {
     text: string;

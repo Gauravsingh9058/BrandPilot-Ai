@@ -166,12 +166,17 @@ export class ContentPlannerService {
       required: ['planName', 'objective', 'durationDays', 'campaignTheme', 'executiveSummary', 'weeklyNarratives', 'diversificationSummary', 'jobs']
     };
 
+    const longRunningTimeout = process.env.AI_LONG_RUNNING_TIMEOUT_MS
+      ? parseInt(process.env.AI_LONG_RUNNING_TIMEOUT_MS, 10)
+      : (process.env.AI_TIMEOUT_MS ? parseInt(process.env.AI_TIMEOUT_MS, 10) : 90000);
+
     let rawOutput: unknown;
     try {
       rawOutput = await this.aiProvider.generateStructured<ContentPlanOutput>(
         prompt,
         jsonSchema,
         {
+          timeoutMs: longRunningTimeout,
           systemInstruction:
             'You are VidSnapAI\'s Chief Content Strategist. Engineer a flawless, high-converting, fully diversified 30-day content calendar in strict JSON matching the schema.'
         }
@@ -207,6 +212,7 @@ export class ContentPlannerService {
           correctivePrompt,
           jsonSchema,
           {
+            timeoutMs: longRunningTimeout,
             systemInstruction:
               'You are VidSnapAI\'s Chief Content Strategist. Strictly correct the previous validation errors and return ONLY a valid ContentPlan JSON object.'
           }

@@ -6,3 +6,4 @@ export * from './repositories/workspace.repository.js';
 export * from './repositories/autonomous.repository.js';
 export * from './repositories/subscription.repository.js';
 export * from './repositories/ai-video-operation.repository.js';
+export { eq, and, or, desc, asc, not, inArray, sql } from 'drizzle-orm';

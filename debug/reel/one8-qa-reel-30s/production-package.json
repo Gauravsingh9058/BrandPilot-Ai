@@ -63,8 +63,8 @@
         }
       ],
       "status": "QUALITY_CHECK",
-      "createdAt": "2026-09-21T10:01:38.882Z",
-      "updatedAt": "2026-09-21T10:01:38.882Z"
+      "createdAt": "2026-09-27T10:31:37.902Z",
+      "updatedAt": "2026-09-27T10:31:37.902Z"
     },
     "assets": [
       {
@@ -76,11 +76,11 @@
         "assetType": "IMAGE",
         "sourceType": "BRAND_LIBRARY",
         "provider": "brand_library",
-        "sourceUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_3yJQkO\\scene_1_asset.png",
-        "previewUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_3yJQkO\\scene_1_asset.png",
+        "sourceUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_49QYTW\\scene_1_asset.png",
+        "previewUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_49QYTW\\scene_1_asset.png",
         "status": "READY",
-        "createdAt": "2026-09-21T10:01:38.882Z",
-        "updatedAt": "2026-09-21T10:01:38.882Z"
+        "createdAt": "2026-09-27T10:31:37.902Z",
+        "updatedAt": "2026-09-27T10:31:37.902Z"
       },
       {
         "id": "asset-scene-2",
@@ -91,11 +91,11 @@
         "assetType": "IMAGE",
         "sourceType": "BRAND_LIBRARY",
         "provider": "brand_library",
-        "sourceUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_3yJQkO\\scene_2_asset.png",
-        "previewUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_3yJQkO\\scene_2_asset.png",
+        "sourceUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_49QYTW\\scene_2_asset.png",
+        "previewUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_49QYTW\\scene_2_asset.png",
         "status": "READY",
-        "createdAt": "2026-09-21T10:01:38.882Z",
-        "updatedAt": "2026-09-21T10:01:38.882Z"
+        "createdAt": "2026-09-27T10:31:37.902Z",
+        "updatedAt": "2026-09-27T10:31:37.902Z"
       },
       {
         "id": "asset-scene-3",
@@ -106,11 +106,11 @@
         "assetType": "IMAGE",
         "sourceType": "BRAND_LIBRARY",
         "provider": "brand_library",
-        "sourceUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_3yJQkO\\scene_3_asset.png",
-        "previewUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_3yJQkO\\scene_3_asset.png",
+        "sourceUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_49QYTW\\scene_3_asset.png",
+        "previewUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_49QYTW\\scene_3_asset.png",
         "status": "READY",
-        "createdAt": "2026-09-21T10:01:38.882Z",
-        "updatedAt": "2026-09-21T10:01:38.882Z"
+        "createdAt": "2026-09-27T10:31:37.902Z",
+        "updatedAt": "2026-09-27T10:31:37.902Z"
       },
       {
         "id": "asset-scene-4",
@@ -121,11 +121,11 @@
         "assetType": "IMAGE",
         "sourceType": "BRAND_LIBRARY",
         "provider": "brand_library",
-        "sourceUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_3yJQkO\\scene_4_asset.png",
-        "previewUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_3yJQkO\\scene_4_asset.png",
+        "sourceUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_49QYTW\\scene_4_asset.png",
+        "previewUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_49QYTW\\scene_4_asset.png",
         "status": "READY",
-        "createdAt": "2026-09-21T10:01:38.882Z",
-        "updatedAt": "2026-09-21T10:01:38.882Z"
+        "createdAt": "2026-09-27T10:31:37.902Z",
+        "updatedAt": "2026-09-27T10:31:37.902Z"
       }
     ],
     "voiceAsset": {
@@ -137,21 +137,21 @@
       "assetType": "VOICE",
       "sourceType": "GENERATED",
       "provider": "local",
-      "sourceUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_3yJQkO\\voice.mp3",
-      "previewUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_3yJQkO\\voice.mp3",
+      "sourceUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_49QYTW\\voice.mp3",
+      "previewUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_49QYTW\\voice.mp3",
       "status": "READY",
-      "createdAt": "2026-09-21T10:01:38.882Z",
-      "updatedAt": "2026-09-21T10:01:38.882Z"
+      "createdAt": "2026-09-27T10:31:37.902Z",
+      "updatedAt": "2026-09-27T10:31:37.902Z"
     },
     "audioMixPlan": {
       "id": "audio-mix-one8-001",
       "reelPlanId": "one8-qa-reel-30s",
       "workspaceId": "ws-one8-qa",
       "musicConfig": {
-        "url": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_3yJQkO\\music.mp3"
+        "url": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_49QYTW\\music.mp3"
       }
     }
   },
-  "createdAt": "2026-09-21T10:01:38.882Z",
-  "updatedAt": "2026-09-21T10:01:38.882Z"
+  "createdAt": "2026-09-27T10:31:37.902Z",
+  "updatedAt": "2026-09-27T10:31:37.902Z"
 }

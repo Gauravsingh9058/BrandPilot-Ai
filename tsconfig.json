@@ -41,6 +41,8 @@
   },
   "include": [
     "tests/**/*.ts",
+    "scripts/**/*.ts",
+    "scratch/**/*.ts",
     "apps/api/src/**/*.ts",
     "vitest.config.ts"
   ]

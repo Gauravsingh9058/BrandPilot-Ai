@@ -13,7 +13,8 @@ import type {
   UpdateProductInput,
   CreateBrandAssetInput,
   AssignAssetToProductInput,
-  UpdateBrandDNAInput
+  UpdateBrandDNAInput,
+  StorageProvider
 } from '@vidsnapai/types';
 import { BrandRepository } from './repositories/brand.repository.js';
 import { ProductRepository } from './repositories/product.repository.js';
@@ -21,14 +22,25 @@ import { AssetRepository } from './repositories/asset.repository.js';
 import { DnaRepository } from './repositories/dna.repository.js';
 import { BrandBrainService } from './brandBrainService.js';
 
+export interface BrandServiceOptions {
+  storageProvider?: StorageProvider;
+}
+
+export interface DeleteAssetResult {
+  success: boolean;
+  error?: string;
+  code?: string;
+}
+
 export class BrandService {
   private brandRepo: BrandRepository;
   private productRepo: ProductRepository;
   private assetRepo: AssetRepository;
   private dnaRepo: DnaRepository;
   private brainService: BrandBrainService;
+  private storageProvider?: StorageProvider;
 
-  constructor(db: Database, aiProvider: AIProvider) {
+  constructor(db: Database, aiProvider: AIProvider, options?: BrandServiceOptions) {
     this.brandRepo = new BrandRepository(db);
     this.productRepo = new ProductRepository(db);
     this.assetRepo = new AssetRepository(db);
@@ -39,6 +51,7 @@ export class BrandService {
       productRepo: this.productRepo,
       assetRepo: this.assetRepo
     });
+    this.storageProvider = options?.storageProvider;
   }
 
   // ==========================================
@@ -198,10 +211,45 @@ export class BrandService {
     return this.assetRepo.listForProduct(brandId, productId);
   }
 
-  async deleteAsset(assetId: string, brandId: string, workspaceId: string): Promise<boolean> {
+  async deleteAsset(
+    assetId: string,
+    brandId: string,
+    workspaceId: string,
+    options?: { force?: boolean }
+  ): Promise<DeleteAssetResult> {
     const brand = await this.brandRepo.findByIdAndWorkspace(brandId, workspaceId);
-    if (!brand) return false;
-    return this.assetRepo.delete(assetId, brandId);
+    if (!brand) {
+      return { success: false, error: 'Brand not found or access denied in this workspace', code: 'BRAND_NOT_FOUND' };
+    }
+
+    const existingAsset = await this.assetRepo.findById(assetId, brandId);
+    if (!existingAsset) {
+      return { success: false, error: 'Asset not found', code: 'ASSET_NOT_FOUND' };
+    }
+
+    // Check if asset is actively referenced in Reel scenes/production
+    if (!options?.force) {
+      const refCount = await this.assetRepo.checkActiveReferences(assetId);
+      if (refCount > 0) {
+        return {
+          success: false,
+          error: `Cannot delete asset "${existingAsset.name}" because it is currently referenced by ${refCount} active Reel asset(s).`,
+          code: 'ASSET_IN_USE'
+        };
+      }
+    }
+
+    // Storage cleanup if storage provider is present and key is defined
+    if (this.storageProvider && existingAsset.storageKey) {
+      try {
+        await this.storageProvider.deleteFile(existingAsset.storageKey);
+      } catch (err: any) {
+        console.warn(`[BrandService] Storage file deletion warning for key ${existingAsset.storageKey}:`, err?.message);
+      }
+    }
+
+    const deleted = await this.assetRepo.delete(assetId, brandId);
+    return { success: deleted };
   }
 
   // ==========================================

@@ -1,0 +1,442 @@
+{
+  "reelPlan": {
+    "contentJobId": "job-one8-velocity-01",
+    "brandId": "brand-one8-live",
+    "campaignId": "camp-one8-velocity",
+    "workspaceId": "ws-live-production",
+    "version": 1,
+    "title": "\"One8 Velocity Elite Product Showcase\"",
+    "concept": {
+      "title": "\"One8 Velocity Elite Product Showcase\"",
+      "concept": "High-impact vertical video breaking down \"One8 Velocity Elite Product Showcase\" with cinematic visual transitions and kinetic captions.",
+      "objective": "Drive audience engagement and awareness for \"One8 Active\".",
+      "targetAudience": "Modern content creators, founders, and digital marketers",
+      "corePromise": "Autonomous director-grade video production in minutes.",
+      "emotionalAngle": "From frustration and slow turnaround to effortless velocity.",
+      "messagingAngle": "Speed, consistency, and professional production standards.",
+      "contentPillar": "\"undefined\"",
+      "funnelStage": "AWARENESS"
+    },
+    "objective": "Drive audience engagement and awareness for \"One8 Active\".",
+    "audience": "Modern content creators, founders, and digital marketers",
+    "funnelStage": "AWARENESS",
+    "contentPillar": "\"undefined\"",
+    "durationSeconds": 6,
+    "aspectRatio": "9:16",
+    "platform": "INSTAGRAM",
+    "format": "REEL",
+    "hook": {
+      "type": "QUESTION",
+      "text": "Stop wasting hours on manual editing.",
+      "visualIntent": "Fast dynamic push-in on subject with bold pop text overlay.",
+      "deliveryStyle": "Punchy and direct",
+      "durationSeconds": 4
+    },
+    "narrative": "Discover how \"One8 Active\" eliminates production bottlenecks and elevates creative execution.",
+    "script": [
+      {
+        "id": "seg-1",
+        "purpose": "HOOK",
+        "text": "Stop wasting hours on manual editing.",
+        "estimatedDuration": 4,
+        "deliveryStyle": "Punchy",
+        "emotionalTone": "Engaging"
+      },
+      {
+        "id": "seg-2",
+        "purpose": "PROBLEM / DESIRE",
+        "text": "Traditional production is slow, repetitive, and expensive.",
+        "estimatedDuration": 4,
+        "deliveryStyle": "Confident",
+        "emotionalTone": "Authoritative"
+      },
+      {
+        "id": "seg-3",
+        "purpose": "PRODUCT HERO",
+        "text": "Meet \"One8 Active\". The autonomous video creation engine built for velocity.",
+        "estimatedDuration": 5,
+        "deliveryStyle": "Confident",
+        "emotionalTone": "Authoritative"
+      },
+      {
+        "id": "seg-4",
+        "purpose": "FEATURE",
+        "text": "Powered by next-gen director intelligence and instant AI rendering.",
+        "estimatedDuration": 5,
+        "deliveryStyle": "Confident",
+        "emotionalTone": "Authoritative"
+      },
+      {
+        "id": "seg-5",
+        "purpose": "BENEFIT",
+        "text": "Create captivating, high-retention commercials in minutes without touching an editor.",
+        "estimatedDuration": 5,
+        "deliveryStyle": "Confident",
+        "emotionalTone": "Authoritative"
+      },
+      {
+        "id": "seg-6",
+        "purpose": "BRAND MOMENT",
+        "text": "\"One8 Active\". Where creativity meets automation.",
+        "estimatedDuration": 4,
+        "deliveryStyle": "Confident",
+        "emotionalTone": "Authoritative"
+      },
+      {
+        "id": "seg-7",
+        "purpose": "CTA",
+        "text": "Start creating your next viral reel now. Link in bio.",
+        "estimatedDuration": 3,
+        "deliveryStyle": "Decisive",
+        "emotionalTone": "Authoritative"
+      }
+    ],
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "durationSeconds": 2,
+        "purpose": "HOOK",
+        "narration": "Engineered for explosive marathon speed.",
+        "onScreenText": "VELOCITY ELITE REVOLUTION",
+        "visualType": "PRODUCT_SHOWCASE",
+        "subject": "One8 Velocity Elite Runner",
+        "environment": "Sleek cinematic studio with rim lighting",
+        "composition": "Centered hero product cutout",
+        "camera": "SLOW_PUSH",
+        "lighting": "High-contrast studio highlights",
+        "mood": "Electric and high-energy",
+        "transition": "CROSSFADE",
+        "animationIntent": "HERO_REVEAL",
+        "assetRequirement": "Product hero image",
+        "productReference": "One8 Velocity Elite Runner",
+        "mediaUrl": "D:\\ALL IN ONE\\MyProjects\\5.VIDSNAPAI\\VidSnapAI\\uploads\\autonomous-brand-reels\\one8_velocity_elite.png"
+      },
+      {
+        "sceneNumber": 2,
+        "durationSeconds": 2,
+        "purpose": "BENEFIT_DEMONSTRATION",
+        "narration": "40% higher energy return with carbon propulsion.",
+        "onScreenText": "40% HIGHER ENERGY RETURN",
+        "visualType": "PRODUCT_SHOWCASE",
+        "subject": "One8 Velocity Elite Carbon Plate",
+        "environment": "Sleek cinematic studio",
+        "composition": "Centered hero product presentation",
+        "camera": "DYNAMIC_PUSH",
+        "lighting": "High-contrast studio highlights",
+        "mood": "Empowering",
+        "transition": "FADE",
+        "animationIntent": "FLOATING_PRODUCT",
+        "assetRequirement": "Product hero image",
+        "productReference": "One8 Velocity Elite Runner",
+        "mediaUrl": "D:\\ALL IN ONE\\MyProjects\\5.VIDSNAPAI\\VidSnapAI\\uploads\\autonomous-brand-reels\\one8_velocity_elite.png"
+      },
+      {
+        "sceneNumber": 3,
+        "durationSeconds": 2,
+        "purpose": "CTA",
+        "narration": "Experience the difference. Shop now at one8.com.",
+        "onScreenText": "SHOP NOW AT ONE8.COM",
+        "visualType": "CTA",
+        "subject": "One8 Brand Logo & CTA Endcard",
+        "environment": "Sleek brand dark environment",
+        "composition": "Centered brand logo reveal",
+        "camera": "STATIC_HERO",
+        "lighting": "Spotlight",
+        "mood": "Triumphant",
+        "transition": "FADE",
+        "animationIntent": "PRODUCT_TO_CTA",
+        "assetRequirement": "Brand logo",
+        "brandElement": "One8 Logo",
+        "mediaUrl": "D:\\ALL IN ONE\\MyProjects\\5.VIDSNAPAI\\VidSnapAI\\uploads\\autonomous-brand-reels\\one8_velocity_elite.png"
+      }
+    ],
+    "visualDirection": {
+      "style": "Cinematic modern dark mode with vibrant neon accents",
+      "mood": "High-energy and professional",
+      "colorIntent": "Deep indigo with emerald green highlights",
+      "lightingIntent": "Crisp studio rim lighting",
+      "composition": "Strict 9:16 vertical framing with centered focal point",
+      "cameraLanguage": "Dynamic rhythmic motion with seamless transitions",
+      "pacing": "Fast-paced with punchy cuts",
+      "visualHierarchy": "Subject first, followed by kinetic typography",
+      "brandIntegration": "\"One8 Active\" watermark and color palette throughout",
+      "productEmphasis": "Core software UI highlights"
+    },
+    "voiceDirection": {
+      "style": "Confident, clear, and modern creator tone",
+      "pace": "Energetic (150-165 WPM)",
+      "tone": "Authoritative yet approachable",
+      "genderPreference": "ANY",
+      "language": "en-US"
+    },
+    "captionDirection": {
+      "style": "High-contrast kinetic caption track with word highlight",
+      "placement": "Bottom-third center",
+      "density": "2-4 words per burst",
+      "fontEmphasis": "Heavy bold sans-serif with subtle drop shadow",
+      "animation": "Scale-pop in synchronization with voiceover syllables"
+    },
+    "animationDirection": {
+      "energy": "High",
+      "style": "Kinetic typography with spring easing",
+      "textAnimation": "Word-by-word active highlight",
+      "visualTransitions": "Whip pans and fast zooms between scenes",
+      "elementMotion": "Subtle ambient particle drift"
+    },
+    "audioDirection": {
+      "musicMood": "Tech-forward electronic lo-fi with energetic bassline",
+      "soundEffects": "Subtle whooshes on cuts and crisp clicks on text reveals",
+      "pacing": "124 BPM matching transition points",
+      "mixBalance": "Voice 100%, Music 22%, SFX 35%"
+    },
+    "cta": {
+      "type": "LEARN_MORE",
+      "text": "Try \"One8 Active\" Today",
+      "visualTreatment": "Gradient pill card with glowing border",
+      "placement": "Scene 7 final 3 seconds",
+      "url": null
+    },
+    "productionMetadata": {
+      "totalScenes": 7,
+      "estimatedWordCount": 59,
+      "targetDurationSeconds": 30,
+      "calculatedDurationSeconds": 30,
+      "generatedBy": "VidSnapAI Reel Orchestrator v5.0",
+      "campaignId": "camp-one8-velocity",
+      "contentJobId": "job-one8-velocity-01",
+      "generatedAt": "2026-09-26T23:42:17.923Z",
+      "complianceNotes": [],
+      "warningFlags": []
+    },
+    "status": "QUALITY_CHECK",
+    "id": "reel-one8-prod-1790466137923",
+    "createdAt": "2026-09-26T23:42:17.923Z",
+    "updatedAt": "2026-09-26T23:42:17.923Z"
+  },
+  "spec": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "totalDurationSeconds": 6,
+    "aspectRatio": "9:16",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "startTime": 0,
+        "endTime": 2,
+        "duration": 2,
+        "mediaUrl": "D:\\ALL IN ONE\\MyProjects\\5.VIDSNAPAI\\VidSnapAI\\uploads\\autonomous-brand-reels\\one8_velocity_elite.png",
+        "mediaType": "PRODUCT_IMAGE",
+        "backgroundColor": "#6366F1",
+        "camera": [
+          {
+            "type": "SLOW_PUSH",
+            "startTime": 0,
+            "duration": 2,
+            "intensity": "MEDIUM",
+            "direction": "IN",
+            "scale": 1.08,
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "easing": "CUBIC_OUT"
+          }
+        ],
+        "textAnimations": [
+          {
+            "targetText": "VELOCITY ELITE REVOLUTION",
+            "startTime": 0.2,
+            "duration": 1.6,
+            "entrance": "WORD_POP",
+            "emphasis": "SCALE_EMPHASIS",
+            "exit": "FADE",
+            "easing": "SPRING",
+            "stagger": 0.12,
+            "emphasisWords": []
+          }
+        ],
+        "productAnimations": [
+          {
+            "productId": "One8 Velocity Elite Runner",
+            "revealType": "SLIDE_REVEAL",
+            "startTime": 0.2,
+            "duration": 1.6,
+            "emphasis": false,
+            "isHeroMoment": false,
+            "scaleIntent": 1,
+            "positionIntent": "center-right",
+            "highlightIntent": false,
+            "backgroundTreatment": "NONE"
+          }
+        ],
+        "logoAnimations": [],
+        "transitionOut": {
+          "fromScene": 1,
+          "toScene": 2,
+          "type": "LIGHT_WIPE",
+          "duration": 0.4,
+          "easing": "CUBIC_OUT",
+          "intensity": "MEDIUM",
+          "rationale": "Luminous solution reveal"
+        },
+        "syncCues": [],
+        "background": {
+          "type": "AMBIENT_BLUR",
+          "primaryColor": "#6366F1",
+          "secondaryColor": "#EC4899"
+        },
+        "product": {
+          "visible": true,
+          "animationPreset": "CINEMATIC_PUSH_IN"
+        }
+      },
+      {
+        "sceneNumber": 2,
+        "startTime": 2,
+        "endTime": 4,
+        "duration": 2,
+        "mediaUrl": "D:\\ALL IN ONE\\MyProjects\\5.VIDSNAPAI\\VidSnapAI\\uploads\\autonomous-brand-reels\\one8_velocity_elite.png",
+        "mediaType": "PRODUCT_IMAGE",
+        "backgroundColor": "#6366F1",
+        "camera": [
+          {
+            "type": "PAN_LEFT",
+            "startTime": 2,
+            "duration": 2,
+            "intensity": "LOW",
+            "direction": "LEFT",
+            "scale": 1.04,
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "easing": "LINEAR"
+          }
+        ],
+        "textAnimations": [
+          {
+            "targetText": "40% HIGHER ENERGY RETURN",
+            "startTime": 2.2,
+            "duration": 1.6,
+            "entrance": "WORD_POP",
+            "emphasis": "SCALE_EMPHASIS",
+            "exit": "FADE",
+            "easing": "SPRING",
+            "stagger": 0.12,
+            "emphasisWords": []
+          }
+        ],
+        "productAnimations": [
+          {
+            "productId": "One8 Velocity Elite Runner",
+            "revealType": "HERO_REVEAL",
+            "startTime": 2.1,
+            "duration": 1.8,
+            "emphasis": true,
+            "isHeroMoment": true,
+            "scaleIntent": 1.15,
+            "positionIntent": "center",
+            "highlightIntent": true,
+            "backgroundTreatment": "RADIAL_DIM"
+          }
+        ],
+        "logoAnimations": [],
+        "transitionOut": {
+          "fromScene": 2,
+          "toScene": 3,
+          "type": "CROSSFADE",
+          "duration": 0.35,
+          "easing": "CUBIC_IN_OUT",
+          "intensity": "MEDIUM",
+          "rationale": "Smooth visual continuation"
+        },
+        "syncCues": [],
+        "background": {
+          "type": "AMBIENT_BLUR",
+          "primaryColor": "#6366F1",
+          "secondaryColor": "#EC4899"
+        },
+        "product": {
+          "visible": true,
+          "animationPreset": "CINEMATIC_PUSH_IN"
+        }
+      },
+      {
+        "sceneNumber": 3,
+        "startTime": 4,
+        "endTime": 6,
+        "duration": 2,
+        "mediaUrl": "D:\\ALL IN ONE\\MyProjects\\5.VIDSNAPAI\\VidSnapAI\\uploads\\autonomous-brand-reels\\one8_logo.png",
+        "mediaType": "BRAND_LOGO",
+        "backgroundColor": "#6366F1",
+        "camera": [
+          {
+            "type": "STATIC",
+            "startTime": 4,
+            "duration": 2,
+            "intensity": "LOW",
+            "scale": 1,
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "easing": "LINEAR"
+          }
+        ],
+        "textAnimations": [
+          {
+            "targetText": "SHOP NOW AT ONE8.COM",
+            "startTime": 4.3,
+            "duration": 1.5,
+            "entrance": "EMPHASIS_PULSE",
+            "emphasis": "PULSE",
+            "exit": "NONE",
+            "easing": "SPRING",
+            "stagger": 0.05,
+            "emphasisWords": []
+          }
+        ],
+        "productAnimations": [],
+        "logoAnimations": [
+          {
+            "startTime": 4.5,
+            "duration": 1.2,
+            "style": "SCALE",
+            "scale": 1.1,
+            "position": "center",
+            "opacity": 1,
+            "easing": "SPRING"
+          }
+        ],
+        "syncCues": [],
+        "background": {
+          "type": "AMBIENT_BLUR",
+          "primaryColor": "#6366F1",
+          "secondaryColor": "#EC4899"
+        },
+        "product": {
+          "visible": true,
+          "animationPreset": "CINEMATIC_PUSH_IN"
+        }
+      }
+    ],
+    "audio": {
+      "musicTrackUrl": "D:\\ALL IN ONE\\MyProjects\\5.VIDSNAPAI\\VidSnapAI\\uploads\\autonomous-brand-reels\\one8_bg_music.mp3",
+      "sfxTracks": [],
+      "ducking": {
+        "enabled": false,
+        "musicAttenuationDb": 14,
+        "attackMs": 200,
+        "releaseMs": 500
+      }
+    },
+    "brand": {
+      "primaryColor": "#6366F1",
+      "secondaryColor": "#EC4899",
+      "accentColor": "#3B82F6",
+      "fontFamily": "Outfit"
+    },
+    "reducedMotion": false
+  }
+}

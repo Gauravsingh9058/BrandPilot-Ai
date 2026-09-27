@@ -66,9 +66,9 @@ export class MockVoiceProvider implements VoiceProvider {
 
     const durationSeconds = Math.max(1.5, Number(((wordCount / 2.5) / speedMultiplier).toFixed(2)));
 
-    // Generate lightweight mock WAV header / buffer for realistic testing
+    // Generate lightweight mock WAV header / buffer with real audible synthesized waveform
     const sampleRate = 44100;
-    const numSamples = Math.floor(sampleRate * Math.min(durationSeconds, 5)); // Cap mock buffer size
+    const numSamples = Math.floor(sampleRate * Math.min(durationSeconds, 30));
     const buffer = Buffer.alloc(44 + numSamples * 2);
 
     // Minimal WAV header
@@ -85,6 +85,19 @@ export class MockVoiceProvider implements VoiceProvider {
     buffer.writeUInt16LE(16, 34);
     buffer.write('data', 36);
     buffer.writeUInt32LE(numSamples * 2, 40);
+
+    // Write real non-silent audio waveform (multi-tone vocal approximation)
+    const gender = config.gender || (config as any).genderPreference || 'male';
+    const baseFreq = gender === 'female' ? 220 : 150;
+    for (let i = 0; i < numSamples; i++) {
+      const t = i / sampleRate;
+      const sample =
+        0.4 * Math.sin(2 * Math.PI * baseFreq * t) +
+        0.2 * Math.sin(2 * Math.PI * baseFreq * 2 * t) +
+        0.1 * Math.sin(2 * Math.PI * baseFreq * 3 * t);
+      const intSample = Math.max(-32767, Math.min(32767, Math.floor(sample * 32767)));
+      buffer.writeInt16LE(intSample, 44 + i * 2);
+    }
 
     return {
       audioBuffer: buffer,

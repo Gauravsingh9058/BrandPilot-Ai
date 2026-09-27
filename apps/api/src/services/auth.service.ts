@@ -14,7 +14,10 @@ export const SESSION_COOKIE_NAME = 'vidsnap_session';
 export const SESSION_EXPIRY_DAYS = 30;
 
 export function hashToken(token: string): string {
-  return crypto.createHash('sha256').update(token).digest('hex');
+  if (!token || typeof token !== 'string') {
+    return '';
+  }
+  return crypto.createHash('sha256').update(token.trim()).digest('hex');
 }
 
 export class AuthService {
@@ -113,17 +116,27 @@ export class AuthService {
   }
 
   async validateSession(rawToken: string): Promise<{ user: User; sessionExpiresAt: Date } | null> {
-    if (!rawToken) return null;
-    const tokenHash = hashToken(rawToken);
-    const session = await this.sessionRepo.findByTokenHash(tokenHash);
-    if (!session) return null;
-
-    const user = await this.userRepo.findById(session.userId);
-    if (!user) {
-      await this.sessionRepo.delete(session.id);
+    if (!rawToken || typeof rawToken !== 'string' || rawToken.trim().length === 0) {
       return null;
     }
+    const cleanToken = rawToken.trim();
+    const tokenHash = hashToken(cleanToken);
+    if (!tokenHash) return null;
 
-    return { user, sessionExpiresAt: session.expiresAt };
+    try {
+      const session = await this.sessionRepo.findByTokenHash(tokenHash);
+      if (!session || !session.userId) return null;
+
+      const user = await this.userRepo.findById(session.userId);
+      if (!user) {
+        await this.sessionRepo.delete(session.id).catch(() => {});
+        return null;
+      }
+
+      return { user, sessionExpiresAt: session.expiresAt };
+    } catch (err) {
+      console.error('[AuthService.validateSession error]', err);
+      return null;
+    }
   }
 }

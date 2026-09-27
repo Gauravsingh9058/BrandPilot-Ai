@@ -154,11 +154,11 @@
       "calculatedDurationSeconds": 4,
       "generatedBy": "ReelDirectorAI",
       "contentJobId": "job-motion-001",
-      "generatedAt": "2026-09-21T10:03:49.335Z"
+      "generatedAt": "2026-09-27T10:33:41.751Z"
     },
     "status": "QUEUED",
-    "createdAt": "2026-09-21T10:03:49.335Z",
-    "updatedAt": "2026-09-21T10:03:49.335Z"
+    "createdAt": "2026-09-27T10:33:41.751Z",
+    "updatedAt": "2026-09-27T10:33:41.751Z"
   },
   "spec": {
     "width": 1080,
@@ -172,7 +172,7 @@
         "startTime": 0,
         "endTime": 2,
         "duration": 2,
-        "mediaUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_motion_test_ifbMcJ\\product_sneaker.png",
+        "mediaUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_motion_test_JzfRcb\\product_sneaker.png",
         "mediaType": "VIDEO",
         "backgroundColor": "#0F172A",
         "camera": [
@@ -230,7 +230,7 @@
         "startTime": 2,
         "endTime": 4,
         "duration": 2,
-        "mediaUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_motion_test_ifbMcJ\\product_sneaker.png",
+        "mediaUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_motion_test_JzfRcb\\product_sneaker.png",
         "mediaType": "VIDEO",
         "backgroundColor": "#0F172A",
         "camera": [
@@ -285,8 +285,8 @@
       }
     ],
     "audio": {
-      "voiceTrackUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_motion_test_ifbMcJ\\voice.mp3",
-      "musicTrackUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_motion_test_ifbMcJ\\music.mp3",
+      "voiceTrackUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_motion_test_JzfRcb\\voice.mp3",
+      "musicTrackUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_motion_test_JzfRcb\\music.mp3",
       "sfxTracks": [],
       "ducking": {
         "enabled": true,
@@ -300,7 +300,7 @@
       "secondaryColor": "#E11D48",
       "accentColor": "#F59E0B",
       "fontFamily": "Inter, sans-serif",
-      "logoUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_motion_test_ifbMcJ\\brand_logo.png"
+      "logoUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_motion_test_JzfRcb\\brand_logo.png"
     },
     "reducedMotion": false
   }

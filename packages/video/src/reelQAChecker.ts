@@ -92,9 +92,15 @@ export class ReelQAChecker {
 
     // Check Audio
     const hasAudio = Boolean(audioStream);
-    const audioPassed = hasAudio;
+    let audioPassed = hasAudio;
     if (!hasAudio) {
       failureReasons.push('Video is missing an audio stream');
+    } else {
+      const { meanVolumeDb, maxVolumeDb } = await this.probeAudioVolume(videoFilePath);
+      if (meanVolumeDb <= -75 && maxVolumeDb <= -75) {
+        audioPassed = false;
+        failureReasons.push(`VOICE_TRACK_SILENT: Audio track is effectively silent. Measured ${meanVolumeDb.toFixed(1)} dB. Expected > -70 dB.`);
+      }
     }
 
     // 3. Scene Coverage Check
@@ -453,5 +459,26 @@ export class ReelQAChecker {
       sumDiff += Math.abs(bufA[i] - bufB[i]);
     }
     return sumDiff / (len / 3);
+  }
+
+  private static async probeAudioVolume(videoPath: string): Promise<{ meanVolumeDb: number; maxVolumeDb: number }> {
+    return new Promise((resolve) => {
+      const proc = spawn('ffmpeg', ['-i', videoPath, '-af', 'volumedetect', '-f', 'null', '-'], {
+        windowsHide: true,
+        stdio: ['ignore', 'ignore', 'pipe']
+      });
+      let stderr = '';
+      proc.stderr.on('data', (d) => (stderr += d.toString()));
+      proc.on('close', () => {
+        const meanMatch = stderr.match(/mean_volume:\s*(-?[0-9.]+)\s*dB/i);
+        const maxMatch = stderr.match(/max_volume:\s*(-?[0-9.]+)\s*dB/i);
+        const meanVolumeDb = meanMatch ? parseFloat(meanMatch[1]) : 0;
+        const maxVolumeDb = maxMatch ? parseFloat(maxMatch[1]) : 0;
+        resolve({ meanVolumeDb, maxVolumeDb });
+      });
+      proc.on('error', () => {
+        resolve({ meanVolumeDb: 0, maxVolumeDb: 0 });
+      });
+    });
   }
 }

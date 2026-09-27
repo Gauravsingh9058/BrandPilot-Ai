@@ -120,7 +120,7 @@ export const MarketingStrategyPage: React.FC = () => {
     if (!strategy) return;
     setEditPositioning(strategy.positioning.valuePropositionStatement);
     setEditHook(strategy.messagingStrategy.brandNarrativeHook);
-    setEditPrimaryCta(strategy.messagingStrategy.voiceGuidance);
+    setEditPrimaryCta(strategy.messagingStrategy.voiceGuidance || '');
     setIsEditModalOpen(true);
   };
 
@@ -234,7 +234,7 @@ export const MarketingStrategyPage: React.FC = () => {
               >
                 {history.map((h) => (
                   <option key={h.id} value={h.version} style={{ background: '#111622', color: '#fff' }}>
-                    v{h.version} ({new Date(h.createdAt).toLocaleDateString()})
+                    v{h.version} ({new Date(h.createdAt || Date.now()).toLocaleDateString()})
                   </option>
                 ))}
               </select>

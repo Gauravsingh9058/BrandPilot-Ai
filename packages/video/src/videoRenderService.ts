@@ -878,9 +878,9 @@ export class VideoRenderService implements VideoRenderer {
     } else if (musicInputIdx >= 0) {
       filterComplex += `;[${musicInputIdx}:a]volume=0.6[a]`;
     } else {
-      ffmpegArgs.push('-f', 'lavfi', '-i', 'anullsrc=r=44100:cl=stereo');
+      ffmpegArgs.push('-f', 'lavfi', '-i', 'sine=frequency=220:sample_rate=44100');
       const nullIdx = ffmpegArgs.filter((a) => a === '-i').length - 1;
-      filterComplex += `;[${nullIdx}:a]volume=0.0[a]`;
+      filterComplex += `;[${nullIdx}:a]volume=0.15[a]`;
     }
 
     ffmpegArgs.push(

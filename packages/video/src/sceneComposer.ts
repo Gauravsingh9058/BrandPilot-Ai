@@ -280,9 +280,9 @@ export class SceneComposer {
     } else if (musicInputIdx >= 0) {
       filterGraph += `;[${musicInputIdx}:a]volume=0.55[a_master]`;
     } else {
-      ffmpegArgs.push('-f', 'lavfi', '-i', 'anullsrc=r=44100:cl=stereo');
+      ffmpegArgs.push('-f', 'lavfi', '-i', 'sine=frequency=220:sample_rate=44100');
       const nullIdx = ffmpegArgs.filter((a) => a === '-i').length - 1;
-      filterGraph += `;[${nullIdx}:a]volume=0.0[a_master]`;
+      filterGraph += `;[${nullIdx}:a]volume=0.15[a_master]`;
     }
 
     ffmpegArgs.push(

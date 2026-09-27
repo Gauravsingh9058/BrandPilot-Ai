@@ -1,0 +1,1117 @@
+{
+  "reelPlan": {
+    "id": "259336e4-9ab3-43d0-bf5d-ee94a7202d9c",
+    "contentJobId": "6a2fc5dd-f3f8-4349-b68d-4fd178d8186b",
+    "brandId": "08fb56fd-6a02-4181-9168-8d7de2e593ae",
+    "campaignId": "53d1c485-fca1-494c-ba49-8b6274011fc8",
+    "contentPlanId": "34a72a8c-e18f-43d2-9bcd-04eebcae1884",
+    "workspaceId": "7ac00edf-76f7-4eb3-b7fa-0fa1421ff614",
+    "version": 1,
+    "targetProductId": "a8b078eb-1f74-4ce4-9ba6-4001e3aed82b",
+    "productId": "a8b078eb-1f74-4ce4-9ba6-4001e3aed82b",
+    "title": "India's Protein Problem Solved",
+    "concept": {
+      "title": "India's Protein Problem Solved",
+      "concept": "High-converting commercial advertisement showcasing Biozyme Performance Whey – Rich Chocolate, 1 kg through problem agitation, macro product hero presentation, concrete feature proof, and urgent call-to-action.",
+      "objective": "Highlight the common challenge of finding authentic, high-quality protein in India.",
+      "corePromise": "Rapid recovery",
+      "funnelStage": "AWARENESS",
+      "contentPillar": "Daily Protein Nutrition",
+      "emotionalAngle": "From frustration to empowerment and delight",
+      "messagingAngle": "Empathetic problem identification and solution hinting.",
+      "targetAudience": "New gym-goers, those skeptical about supplement quality, consumers confused by market options."
+    },
+    "objective": "Highlight the common challenge of finding authentic, high-quality protein in India.",
+    "audience": "New gym-goers, those skeptical about supplement quality, consumers confused by market options.",
+    "funnelStage": "AWARENESS",
+    "contentPillar": "Daily Protein Nutrition",
+    "durationSeconds": 30,
+    "aspectRatio": "9:16",
+    "platform": "INSTAGRAM",
+    "format": "REEL",
+    "hook": {
+      "text": "Are you *really* getting enough high-quality protein from your diet? Think again.",
+      "type": "PROBLEM",
+      "visualIntent": "Immediate reveal of Biozyme Performance Whey – Rich Chocolate, 1 kg with high-energy kinetic text",
+      "deliveryStyle": "Punchy, conversational, magnetic",
+      "durationSeconds": 4
+    },
+    "narrative": "High-converting commercial advertisement showcasing Biozyme Performance Whey – Rich Chocolate, 1 kg through problem agitation, macro product hero presentation, concrete feature proof, and urgent call-to-action.",
+    "script": [
+      {
+        "id": "seg-1",
+        "text": "Are you *really* getting enough high-quality protein from your diet? Think again.",
+        "purpose": "Hook",
+        "deliveryStyle": "Punchy & Magnetic",
+        "emotionalTone": "High Energy",
+        "estimatedDuration": 4
+      },
+      {
+        "id": "seg-2",
+        "text": "Authentic, high-quality protein is crucial for muscle building and recovery, and MuscleBlaze is dedicated to making it accessible.",
+        "purpose": "Problem",
+        "deliveryStyle": "Relatable & Empathetic",
+        "emotionalTone": "Serious",
+        "estimatedDuration": 4
+      },
+      {
+        "id": "seg-3",
+        "text": "Meet Biozyme Performance Whey – Rich Chocolate, 1 kg — engineered specifically for New gym-goers, those skeptical about supplement quality, consumers confused by market options..",
+        "purpose": "Product Hero",
+        "deliveryStyle": "Prestigious & Confident",
+        "emotionalTone": "Aspirational",
+        "estimatedDuration": 5
+      },
+      {
+        "id": "seg-4",
+        "text": "Powered by 25g Protein, delivering precision and reliability without compromise.",
+        "purpose": "Feature",
+        "deliveryStyle": "Precise & Authoritative",
+        "emotionalTone": "Informative",
+        "estimatedDuration": 5
+      },
+      {
+        "id": "seg-5",
+        "text": "That means Rapid recovery every single day, so you can achieve peak performance effortlessly.",
+        "purpose": "Benefit",
+        "deliveryStyle": "Uplifting & Inspiring",
+        "emotionalTone": "Rewarding",
+        "estimatedDuration": 5
+      },
+      {
+        "id": "seg-6",
+        "text": "MuscleBlaze. MuscleBlaze is an Indian sports nutrition and fitness brand offering whey protein, protein supplements, vitamins, performance nutrition, and other fitness-focused products for athletes, gym-goers, and active lifestyles.",
+        "purpose": "Brand Moment",
+        "deliveryStyle": "Iconic & Resonant",
+        "emotionalTone": "Authoritative",
+        "estimatedDuration": 4
+      },
+      {
+        "id": "seg-7",
+        "text": "What's your biggest protein challenge? Tell us below!",
+        "purpose": "CTA",
+        "deliveryStyle": "Direct & Action-Oriented",
+        "emotionalTone": "Urgent",
+        "estimatedDuration": 3
+      }
+    ],
+    "scenes": [
+      {
+        "mood": "High-energy, magnetic, professional",
+        "camera": "Fast push-in with 15-degree dynamic Dutch tilt",
+        "motion": "Dynamic kinetic energy with smooth deceleration",
+        "purpose": "HOOK",
+        "subject": "High-impact reveal of Biozyme Performance Whey – Rich Chocolate, 1 kg with vibrant energy",
+        "emphasis": "Immediate visual recognition and hook curiosity",
+        "lighting": "High-contrast studio rim lighting with #000000 neon highlights",
+        "veoModel": "veo-3.1-generate-preview",
+        "narration": "Are you *really* getting enough high-quality protein from your diet? Think again.",
+        "veoPrompt": "Cinematic vertical 9:16 commercial opening. Fast dynamic push-in on Biozyme Performance Whey – Rich Chocolate, 1 kg, sharp macro focus, dramatic volumetric rim lighting (#000000), clean modern aesthetic, photorealistic 4K texture. Preserve the exact appearance, proportions, colors, materials, branding and recognizable details of the supplied product reference.",
+        "transition": "Dynamic whip cut",
+        "visualType": "PRODUCT_SHOWCASE",
+        "composition": "9:16 vertical centered dynamic close-up",
+        "environment": "Premium modern setting with brand gradient accents (#000000)",
+        "sceneNumber": 1,
+        "brandElement": "MuscleBlaze",
+        "onScreenText": "ARE YOU *REALLY* GETTING ENOUGH HIGH-QUALITY PROTEIN FROM YOUR DIET? THINK AGAIN.",
+        "failureReason": "PRODUCT_REFERENCE_REQUIRED: PRODUCT_ASSET_REQUIRED: No production-ready product asset is available for \"Biozyme Performance Whey – Rich Chocolate, 1 kg\". Add a product photo from your device or Brand Asset Library before generating the reel.",
+        "cameraMovement": "Fast push-in with subtle rotation",
+        "animationIntent": "Kinetic pop typography scaling in sync with voiceover",
+        "durationSeconds": 4,
+        "assetRequirement": "High-resolution hero shot of Biozyme Performance Whey – Rich Chocolate, 1 kg",
+        "lastFrameAssetId": null,
+        "productReference": "a8b078eb-1f74-4ce4-9ba6-4001e3aed82b",
+        "firstFrameAssetId": null,
+        "referenceAssetIds": [],
+        "veoNegativePrompt": "blurry, low resolution, watermark, bad anatomy, text artifacts, CGI glitch, generic mock packaging, distorted logo, distorted product geometry, altered logo, changed product colors, different packaging, invented accessories, invented text on packaging, distorted product shape, fake brand mark, CGI glitch, cartoon",
+        "textSafeComposition": "Keep top 20% and bottom 25% clear for captions and interface overlays",
+        "transitionIntention": "Whip pan transition to problem context",
+        "veoGenerationStatus": "FAILED",
+        "brandPreservationRules": "Incorporate brand primary color (#000000)",
+        "productPreservationRules": "Preserve exact packaging silhouette and physical details of Biozyme Performance Whey – Rich Chocolate, 1 kg"
+      },
+      {
+        "mood": "Empathetic, authentic, focused",
+        "camera": "Slow tracking dolly shot",
+        "motion": "Subtle natural human motion with environmental depth",
+        "purpose": "PROBLEM / DESIRE",
+        "subject": "Relatable visual representing the customer challenge and friction point",
+        "emphasis": "Emotional resonance with audience struggle",
+        "lighting": "Moody atmospheric ambient lighting",
+        "veoModel": "veo-3.1-generate-preview",
+        "narration": "Authentic, high-quality protein is crucial for muscle building and recovery, and MuscleBlaze is dedicated to making it accessible.",
+        "veoPrompt": "Cinematic 9:16 portrait lifestyle scene. Subject dealing with daily friction, moody cinematic lighting, shallow depth of field, authentic emotional storytelling, filmic color grading.",
+        "transition": "Match cut to solution",
+        "visualType": "PROBLEM",
+        "composition": "Medium portrait framing with natural depth of field",
+        "environment": "Everyday lifestyle / workplace environment with moody contrast",
+        "sceneNumber": 2,
+        "brandElement": null,
+        "onScreenText": "THE EVERYDAY STRUGGLE",
+        "cameraMovement": "Slow steady dolly shot",
+        "animationIntent": "Subtle text wipe with high-contrast badge backing",
+        "durationSeconds": 4,
+        "assetRequirement": "Lifestyle scene illustrating user pain point and desire for better solution",
+        "lastFrameAssetId": null,
+        "productReference": null,
+        "firstFrameAssetId": null,
+        "referenceAssetIds": [],
+        "veoNegativePrompt": "overexposed, cartoonish, low detail, watermark, plastic look",
+        "textSafeComposition": "Centered text safe zone",
+        "transitionIntention": "Match cut directly to product hero presentation",
+        "veoGenerationStatus": "SUBMITTED",
+        "brandPreservationRules": "Maintain premium commercial grade color grading",
+        "productPreservationRules": "No product distortion"
+      },
+      {
+        "mood": "Prestigious, refined, innovative",
+        "camera": "Smooth 45-degree orbit and slow rising pedestal",
+        "motion": "Pristine smooth 360-degree rotation",
+        "purpose": "PRODUCT HERO",
+        "subject": "Hero presentation of Biozyme Performance Whey – Rich Chocolate, 1 kg suspended in air with 360 rotation",
+        "emphasis": "Pristine product craftsmanship and physical authority",
+        "lighting": "Dual-tone luxury studio lighting (#000000 key light, #E31E24 fill)",
+        "veoModel": "veo-3.1-generate-preview",
+        "narration": "Meet Biozyme Performance Whey – Rich Chocolate, 1 kg — engineered specifically for New gym-goers, those skeptical about supplement quality, consumers confused by market options..",
+        "veoPrompt": "Commercial studio hero shot in 9:16. Biozyme Performance Whey – Rich Chocolate, 1 kg rotating smoothly on pristine reflective obsidian surface, soft volumetric ground smoke, dual-tone studio lighting (#000000 and #E31E24), 8k photorealistic product commercial. Preserve the exact appearance, proportions, colors, materials, branding and recognizable details of the supplied product reference.",
+        "transition": "Smooth push zoom",
+        "visualType": "PRODUCT_SHOWCASE",
+        "composition": "Macro central 9:16 portrait focus",
+        "environment": "Reflective dark obsidian stage with glowing #000000 ground mist",
+        "sceneNumber": 3,
+        "brandElement": "MuscleBlaze",
+        "onScreenText": "BIOZYME PERFORMANCE WHEY – RICH CHOCOLATE, 1 KG",
+        "failureReason": "PRODUCT_REFERENCE_REQUIRED: PRODUCT_ASSET_REQUIRED: No production-ready product asset is available for \"Biozyme Performance Whey – Rich Chocolate, 1 kg\". Add a product photo from your device or Brand Asset Library before generating the reel.",
+        "cameraMovement": "Smooth 45-degree circular orbit and slow upward crane",
+        "animationIntent": "Luminescent outline trace with smooth floating elevation",
+        "durationSeconds": 5,
+        "assetRequirement": "Prisiline first-party hero asset of Biozyme Performance Whey – Rich Chocolate, 1 kg",
+        "lastFrameAssetId": null,
+        "productReference": "a8b078eb-1f74-4ce4-9ba6-4001e3aed82b",
+        "firstFrameAssetId": null,
+        "referenceAssetIds": [],
+        "veoNegativePrompt": "blurry, fake brand, distorted label, incorrect proportions, CGI artifacts, distorted product geometry, altered logo, changed product colors, different packaging, invented accessories, invented text on packaging, distorted product shape, fake brand mark, CGI glitch, cartoon",
+        "textSafeComposition": "Keep center 70% safe for bold brand typography",
+        "transitionIntention": "Push zoom into feature mechanism",
+        "veoGenerationStatus": "FAILED",
+        "brandPreservationRules": "Align with brand palette: #000000, #E31E24",
+        "productPreservationRules": "Strict preservation of Biozyme Performance Whey – Rich Chocolate, 1 kg real product silhouette and labeling"
+      },
+      {
+        "mood": "Technical, sophisticated, credible",
+        "camera": "Slow precision linear glide across product contours",
+        "motion": "Active functional demonstration motion",
+        "purpose": "FEATURE",
+        "subject": "Detailed close-up demonstration of 25g Protein",
+        "emphasis": "Concrete tangible evidence of product capability",
+        "lighting": "Crisp specular directional lighting accentuating texture",
+        "veoModel": "veo-3.1-generate-preview",
+        "narration": "Powered by 25g Protein, delivering precision and reliability without compromise.",
+        "veoPrompt": "Macro 9:16 demonstration of Biozyme Performance Whey – Rich Chocolate, 1 kg. Detailed close-up showing 25g Protein in active demonstration, clean crisp specular highlights, high-speed shutter aesthetic, photorealistic texture. Preserve the exact appearance, proportions, colors, materials, branding and recognizable details of the supplied product reference.",
+        "transition": "Quick pan",
+        "visualType": "DEMONSTRATION",
+        "composition": "Macro tight shot highlighting technical excellence",
+        "environment": "High-tech studio environment with dynamic particle illumination",
+        "sceneNumber": 4,
+        "brandElement": null,
+        "onScreenText": "25G PROTEIN",
+        "failureReason": "PRODUCT_REFERENCE_REQUIRED: PRODUCT_ASSET_REQUIRED: No production-ready product asset is available for \"Biozyme Performance Whey – Rich Chocolate, 1 kg\". Add a product photo from your device or Brand Asset Library before generating the reel.",
+        "cameraMovement": "Linear glide across product surface",
+        "animationIntent": "Interactive callout line and pulsing spec indicator badge",
+        "durationSeconds": 5,
+        "assetRequirement": "Close-up detail shot of Biozyme Performance Whey – Rich Chocolate, 1 kg demonstrating 25g Protein",
+        "lastFrameAssetId": null,
+        "productReference": "a8b078eb-1f74-4ce4-9ba6-4001e3aed82b",
+        "firstFrameAssetId": null,
+        "referenceAssetIds": [],
+        "veoNegativePrompt": "blurry, distorted materials, fake text, low-res, distorted product geometry, altered logo, changed product colors, different packaging, invented accessories, invented text on packaging, distorted product shape, fake brand mark, CGI glitch, cartoon",
+        "textSafeComposition": "Left-aligned callout badge safe area",
+        "transitionIntention": "Quick pan into customer transformation",
+        "veoGenerationStatus": "FAILED",
+        "brandPreservationRules": "Consistent brand lighting palette",
+        "productPreservationRules": "Accurate physical textures and mechanical features"
+      },
+      {
+        "mood": "Triumphant, energizing, rewarding",
+        "camera": "Natural handheld tracking motion with cinematic stabilization",
+        "motion": "Natural joyful human action",
+        "purpose": "BENEFIT",
+        "subject": "Customer experiencing the breakthrough benefit and transformation",
+        "emphasis": "Emotional payoff and customer transformation",
+        "lighting": "Golden hour warm natural illumination",
+        "veoModel": "veo-3.1-generate-preview",
+        "narration": "That means Rapid recovery every single day, so you can achieve peak performance effortlessly.",
+        "veoPrompt": "Uplifting cinematic 9:16 vertical lifestyle video. Confident user experiencing Rapid recovery, beautiful warm golden-hour lighting, premium commercial cinematography, authentic joyful expression.",
+        "transition": "Soft zoom out",
+        "visualType": "SOLUTION",
+        "composition": "Medium lifestyle shot with warm visual payoff",
+        "environment": "Bright, uplifting, modern real-world environment",
+        "sceneNumber": 5,
+        "brandElement": null,
+        "onScreenText": "RAPID RECOVERY",
+        "cameraMovement": "Smooth handheld follow shot",
+        "animationIntent": "Dynamic benefit pill card sliding in from bottom-third",
+        "durationSeconds": 5,
+        "assetRequirement": "Lifestyle footage showcasing positive customer outcome and emotional satisfaction",
+        "lastFrameAssetId": null,
+        "productReference": "a8b078eb-1f74-4ce4-9ba6-4001e3aed82b",
+        "firstFrameAssetId": null,
+        "referenceAssetIds": [],
+        "veoNegativePrompt": "dark, gloomy, distorted faces, unrealistic movement",
+        "textSafeComposition": "Bottom-third card placement",
+        "transitionIntention": "Smooth zoom transition into brand moment",
+        "veoGenerationStatus": "SUBMITTED",
+        "brandPreservationRules": "Warm premium color tone",
+        "productPreservationRules": "Product integrated naturally in lifestyle context"
+      },
+      {
+        "mood": "Authoritative, timeless, iconic",
+        "camera": "Slow cinematic pull-back",
+        "motion": "Ambient light sweep across logo and product",
+        "purpose": "BRAND MOMENT",
+        "subject": "Brand identity showcase with Biozyme Performance Whey – Rich Chocolate, 1 kg and official logo",
+        "emphasis": "Brand trust, legacy, and emotional connection",
+        "lighting": "Epic architectural backlighting",
+        "veoModel": "veo-3.1-generate-preview",
+        "narration": "MuscleBlaze. MuscleBlaze is an Indian sports nutrition and fitness brand offering whey protein, protein supplements, vitamins, performance nutrition, and other fitness-focused products for athletes, gym-goers, and active lifestyles.",
+        "veoPrompt": "Epic 9:16 brand anthem shot. MuscleBlaze visual identity with Biozyme Performance Whey – Rich Chocolate, 1 kg, architectural studio backlighting in #000000, premium commercial grade aesthetic.",
+        "transition": "Seamless wipe",
+        "visualType": "BRAND",
+        "composition": "Centered wide portrait framing",
+        "environment": "Immersive branded visual space with signature #000000 and #E31E24 elements",
+        "sceneNumber": 6,
+        "brandElement": "MuscleBlaze",
+        "onScreenText": "MUSCLEBLAZE",
+        "cameraMovement": "Slow dramatic pull-back",
+        "animationIntent": "Smooth logo reveal with glowing brand particle trail",
+        "durationSeconds": 4,
+        "assetRequirement": "Official logo of MuscleBlaze alongside Biozyme Performance Whey – Rich Chocolate, 1 kg",
+        "lastFrameAssetId": null,
+        "productReference": "a8b078eb-1f74-4ce4-9ba6-4001e3aed82b",
+        "firstFrameAssetId": null,
+        "referenceAssetIds": [],
+        "veoNegativePrompt": "misspelled logo, incorrect colors, low quality",
+        "textSafeComposition": "Centered brand text safe zone",
+        "transitionIntention": "Seamless wipe to closing call to action",
+        "veoGenerationStatus": "SUBMITTED",
+        "brandPreservationRules": "Preserve exact brand identity: MuscleBlaze",
+        "productPreservationRules": "Authentic product and logo display"
+      },
+      {
+        "mood": "Action-oriented, urgent, compelling",
+        "camera": "Locked static frame with pulsing animation",
+        "motion": "Pulsing CTA glow and subtle particle drift",
+        "purpose": "CTA",
+        "subject": "High-converting commercial endcard with Biozyme Performance Whey – Rich Chocolate, 1 kg and interactive CTA button",
+        "emphasis": "Immediate viewer conversion and clear next action",
+        "lighting": "Studio spotlight on CTA action element",
+        "veoModel": "veo-3.1-generate-preview",
+        "narration": "What's your biggest protein challenge? Tell us below!",
+        "veoPrompt": "Commercial endcard in 9:16 vertical. Clean dark luxury gradient, Biozyme Performance Whey – Rich Chocolate, 1 kg centered with glowing #000000 call-to-action button, commercial advertisement finale.",
+        "transition": "Fade to black",
+        "visualType": "CTA",
+        "composition": "Centered 9:16 commercial card layout",
+        "environment": "Clean modern dark gradient with glowing accent border",
+        "sceneNumber": 7,
+        "brandElement": "MuscleBlaze",
+        "onScreenText": "WHAT'S YOUR BIGGEST PROTEIN CHALLENGE? TELL US BELOW!",
+        "cameraMovement": "Static locked focus",
+        "animationIntent": "Pulsing CTA button with subtle gradient shimmer and arrow indicator",
+        "durationSeconds": 3,
+        "assetRequirement": "Branded call to action endcard with clear link and product visual",
+        "lastFrameAssetId": null,
+        "productReference": "a8b078eb-1f74-4ce4-9ba6-4001e3aed82b",
+        "firstFrameAssetId": null,
+        "referenceAssetIds": [],
+        "veoNegativePrompt": "cluttered, broken text, illegible font",
+        "textSafeComposition": "Strict center card safe margins",
+        "transitionIntention": "Fade to black",
+        "veoGenerationStatus": "SUBMITTED",
+        "brandPreservationRules": "Exact brand primary CTA styling",
+        "productPreservationRules": "Clean product hero presentation"
+      }
+    ],
+    "visualDirection": {
+      "mood": "Prestigious, energizing, modern",
+      "style": "Cinematic commercial advertising with high production value",
+      "pacing": "Fast-paced with deliberate pauses on macro product hero moments",
+      "colorIntent": "Signature brand palette centered on #000000 with #E31E24 accents",
+      "composition": "Strict 9:16 vertical portrait framing optimized for mobile screens",
+      "cameraLanguage": "Dynamic rhythmic motion with seamless match cuts and orbits",
+      "lightingIntent": "Crisp volumetric studio rim lighting with dramatic contrast",
+      "productEmphasis": "Continuous hero visibility of genuine Biozyme Performance Whey – Rich Chocolate, 1 kg first-party assets",
+      "visualHierarchy": "Product hero first, followed by kinetic bold typography",
+      "brandIntegration": "MuscleBlaze watermark, color palette, and official logo endcard"
+    },
+    "voiceDirection": {
+      "pace": "Energetic commercial pace (150-165 WPM)",
+      "tone": "Confident, authoritative, inspiring",
+      "style": "Confident, energetic, motivating, knowledgeable, performance-focused, and straightforward. Communication should feel like an experienced fitness brand guiding customers toward their goals—not overly technical or overly salesy.",
+      "language": "en-US",
+      "genderPreference": "ANY"
+    },
+    "captionDirection": {
+      "style": "High-contrast kinetic caption track with word-by-word active glow",
+      "density": "2-4 words per burst",
+      "animation": "Scale-pop in synchronization with voiceover syllables",
+      "placement": "Bottom-third center safe zone",
+      "fontEmphasis": "Heavy bold brand sans-serif with subtle dark drop shadow"
+    },
+    "animationDirection": {
+      "style": "Smooth kinetic commercial motion graphics",
+      "energy": "High",
+      "elementMotion": "Subtle ambient particle drift and glowing outline traces",
+      "textAnimation": "Word-by-word active highlight with spring physics",
+      "visualTransitions": "Whip pans, push zooms, and seamless match cuts"
+    },
+    "audioDirection": {
+      "pacing": "124 BPM matching transition points",
+      "musicMood": "Tech-forward electronic lo-fi with energetic bassline and uplifting drop",
+      "mixBalance": "Voice 100%, Music 22%, SFX 35%",
+      "soundEffects": "Subtle whooshes on cuts and crisp clicks on text reveals"
+    },
+    "cta": {
+      "url": "Buy Now",
+      "text": "What's your biggest protein challenge? Tell us below!",
+      "type": "LEARN_MORE",
+      "placement": "Scene 7 final 3 seconds",
+      "visualTreatment": "Gradient pill card with glowing border and arrow indicator"
+    },
+    "productionMetadata": {
+      "economics": {
+        "plan": "STARTER",
+        "summary": "Estimated Reel COGS: ₹51.0 (Target: <= ₹100/reel). Scenes: 7 (Veo Standard: NO, Veo Fast: 0, Veo Lite: 2, Brand Assets: 3, Pexels: 0, FFmpeg: 2).",
+        "totalScenes": 7,
+        "workspaceId": "7ac00edf-76f7-4eb3-b7fa-0fa1421ff614",
+        "isFreeShowcase": false,
+        "sceneDecisions": [
+          {
+            "method": "BRAND_ASSET",
+            "provider": "brand_library",
+            "rationale": "First-party product asset matched with high fidelity for product showcase scene.",
+            "sceneNumber": 1,
+            "estimatedCostInr": 1,
+            "qualityEscalated": false,
+            "veoStandardJustified": false
+          },
+          {
+            "method": "FFMPEG_MOTION",
+            "provider": "ffmpeg_motion",
+            "rationale": "Motion graphics, typography, and dynamic on-screen text animation routed to FFmpeg.",
+            "sceneNumber": 2,
+            "estimatedCostInr": 4,
+            "qualityEscalated": false,
+            "veoStandardJustified": false
+          },
+          {
+            "method": "BRAND_ASSET",
+            "provider": "brand_library",
+            "rationale": "First-party product asset matched with high fidelity for product showcase scene.",
+            "sceneNumber": 3,
+            "estimatedCostInr": 1,
+            "qualityEscalated": false,
+            "veoStandardJustified": false
+          },
+          {
+            "method": "VEO_LITE",
+            "provider": "google-veo",
+            "modelTier": "veo-3.1-lite",
+            "rationale": "Simple AI scene with subtle background motion routed to cost-effective Veo Lite.",
+            "sceneNumber": 4,
+            "estimatedCostInr": 15,
+            "qualityEscalated": false,
+            "veoStandardJustified": false
+          },
+          {
+            "method": "BRAND_ASSET",
+            "provider": "brand_library",
+            "rationale": "First-party product asset matched with high fidelity for product showcase scene.",
+            "sceneNumber": 5,
+            "estimatedCostInr": 1,
+            "qualityEscalated": false,
+            "veoStandardJustified": false
+          },
+          {
+            "method": "VEO_LITE",
+            "provider": "google-veo",
+            "modelTier": "veo-3.1-lite",
+            "rationale": "Simple AI scene with subtle background motion routed to cost-effective Veo Lite.",
+            "sceneNumber": 6,
+            "estimatedCostInr": 15,
+            "qualityEscalated": false,
+            "veoStandardJustified": false
+          },
+          {
+            "method": "FFMPEG_MOTION",
+            "provider": "ffmpeg_motion",
+            "rationale": "Motion graphics, typography, and dynamic on-screen text animation routed to FFmpeg.",
+            "sceneNumber": 7,
+            "estimatedCostInr": 4,
+            "qualityEscalated": false,
+            "veoStandardJustified": false
+          }
+        ],
+        "targetMaxCostInr": 100,
+        "withinTargetBudget": true,
+        "containsVeoStandard": false,
+        "estimatedTotalCostInr": 51
+      },
+      "aiProvider": "deterministic_fallback",
+      "campaignId": "53d1c485-fca1-494c-ba49-8b6274011fc8",
+      "generatedAt": "2026-09-26T21:02:23.017Z",
+      "generatedBy": "VidSnapAI Reel Orchestrator v5.0 (Deterministic Fallback)",
+      "totalScenes": 7,
+      "contentJobId": "6a2fc5dd-f3f8-4349-b68d-4fd178d8186b",
+      "fallbackUsed": true,
+      "renderOutput": {
+        "jobId": "render_259336e4-9ab3-43d0-bf5d-ee94a7202d9c_1790464365547",
+        "status": "FAILED",
+        "renderedAt": "2026-09-26T23:12:45.547Z",
+        "completedAt": "2026-09-26T23:13:21.019Z",
+        "diagnostics": {
+          "renderId": "render_259336e4-9ab3-43d0-bf5d-ee94a7202d9c_1790464365547",
+          "failureReason": "VOICE_GENERATION_FAILED: Voice track audio file is silent (mean volume: -91.0 dB). Audible voice track required."
+        },
+        "errorMessage": "VOICE_GENERATION_FAILED: Voice track audio file is silent (mean volume: -91.0 dB). Audible voice track required.",
+        "outputVideoUrl": "",
+        "durationSeconds": 30
+      },
+      "warningFlags": [
+        "HIGH_NARRATION_DENSITY",
+        "Deterministic fallback used: [GeminiProvider] Service temporarily unavailable after retries. Request exceeded timeout limit of 30000ms [ReqID: ai_req_1790456449610_dvep7]"
+      ],
+      "fallbackReason": "[GeminiProvider] Service temporarily unavailable after retries. Request exceeded timeout limit of 30000ms [ReqID: ai_req_1790456449610_dvep7]",
+      "sceneDecisions": [
+        {
+          "method": "BRAND_ASSET",
+          "provider": "brand_library",
+          "rationale": "First-party product asset matched with high fidelity for product showcase scene.",
+          "sceneNumber": 1,
+          "estimatedCostInr": 1,
+          "qualityEscalated": false,
+          "veoStandardJustified": false
+        },
+        {
+          "method": "FFMPEG_MOTION",
+          "provider": "ffmpeg_motion",
+          "rationale": "Motion graphics, typography, and dynamic on-screen text animation routed to FFmpeg.",
+          "sceneNumber": 2,
+          "estimatedCostInr": 4,
+          "qualityEscalated": false,
+          "veoStandardJustified": false
+        },
+        {
+          "method": "BRAND_ASSET",
+          "provider": "brand_library",
+          "rationale": "First-party product asset matched with high fidelity for product showcase scene.",
+          "sceneNumber": 3,
+          "estimatedCostInr": 1,
+          "qualityEscalated": false,
+          "veoStandardJustified": false
+        },
+        {
+          "method": "VEO_LITE",
+          "provider": "google-veo",
+          "modelTier": "veo-3.1-lite",
+          "rationale": "Simple AI scene with subtle background motion routed to cost-effective Veo Lite.",
+          "sceneNumber": 4,
+          "estimatedCostInr": 15,
+          "qualityEscalated": false,
+          "veoStandardJustified": false
+        },
+        {
+          "method": "BRAND_ASSET",
+          "provider": "brand_library",
+          "rationale": "First-party product asset matched with high fidelity for product showcase scene.",
+          "sceneNumber": 5,
+          "estimatedCostInr": 1,
+          "qualityEscalated": false,
+          "veoStandardJustified": false
+        },
+        {
+          "method": "VEO_LITE",
+          "provider": "google-veo",
+          "modelTier": "veo-3.1-lite",
+          "rationale": "Simple AI scene with subtle background motion routed to cost-effective Veo Lite.",
+          "sceneNumber": 6,
+          "estimatedCostInr": 15,
+          "qualityEscalated": false,
+          "veoStandardJustified": false
+        },
+        {
+          "method": "FFMPEG_MOTION",
+          "provider": "ffmpeg_motion",
+          "rationale": "Motion graphics, typography, and dynamic on-screen text animation routed to FFmpeg.",
+          "sceneNumber": 7,
+          "estimatedCostInr": 4,
+          "qualityEscalated": false,
+          "veoStandardJustified": false
+        }
+      ],
+      "brandDnaVersion": 2,
+      "complianceNotes": [],
+      "targetProductId": "a8b078eb-1f74-4ce4-9ba6-4001e3aed82b",
+      "estimatedWordCount": 115,
+      "marketingStrategyId": "30e1555f-2a78-4c1f-b1d5-ee621206a633",
+      "targetDurationSeconds": 30,
+      "calculatedDurationSeconds": 30
+    },
+    "status": "FAILED",
+    "renderOutput": {
+      "jobId": "render_259336e4-9ab3-43d0-bf5d-ee94a7202d9c_1790464365547",
+      "status": "FAILED",
+      "renderedAt": "2026-09-26T23:12:45.547Z",
+      "completedAt": "2026-09-26T23:13:21.019Z",
+      "diagnostics": {
+        "renderId": "render_259336e4-9ab3-43d0-bf5d-ee94a7202d9c_1790464365547",
+        "failureReason": "VOICE_GENERATION_FAILED: Voice track audio file is silent (mean volume: -91.0 dB). Audible voice track required."
+      },
+      "errorMessage": "VOICE_GENERATION_FAILED: Voice track audio file is silent (mean volume: -91.0 dB). Audible voice track required.",
+      "outputVideoUrl": "",
+      "durationSeconds": 30
+    },
+    "outputVideoUrl": "",
+    "createdAt": "2026-09-26T21:02:22.809Z",
+    "updatedAt": "2026-09-26T23:13:21.161Z"
+  },
+  "spec": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "totalDurationSeconds": 30,
+    "aspectRatio": "9:16",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "startTime": 0,
+        "endTime": 4,
+        "duration": 4,
+        "mediaUrl": "/api/storage/files/assets/08fb56fd-6a02-4181-9168-8d7de2e593ae/1790452337002_img6.jpg",
+        "mediaType": "PRODUCT_IMAGE",
+        "backgroundColor": "#6366F1",
+        "camera": [
+          {
+            "type": "SLOW_PUSH",
+            "scale": 1.08,
+            "easing": "CUBIC_OUT",
+            "duration": 4,
+            "direction": "IN",
+            "intensity": "MEDIUM",
+            "startTime": 0,
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          }
+        ],
+        "textAnimations": [
+          {
+            "exit": "FADE",
+            "easing": "SPRING",
+            "stagger": 0.12,
+            "duration": 3.6,
+            "emphasis": "SCALE_EMPHASIS",
+            "entrance": "WORD_POP",
+            "startTime": 0.2,
+            "targetText": "ARE YOU *REALLY* GETTING ENOUGH HIGH-QUALITY PROTEIN FROM YOUR DIET? THINK AGAIN.",
+            "emphasisWords": []
+          }
+        ],
+        "productAnimations": [
+          {
+            "duration": 3.6,
+            "emphasis": false,
+            "productId": "a8b078eb-1f74-4ce4-9ba6-4001e3aed82b",
+            "startTime": 0.2,
+            "revealType": "SLIDE_REVEAL",
+            "scaleIntent": 1,
+            "isHeroMoment": false,
+            "positionIntent": "center-right",
+            "highlightIntent": false,
+            "backgroundTreatment": "NONE"
+          }
+        ],
+        "logoAnimations": [
+          {
+            "scale": 0.85,
+            "style": "MINIMAL_MARK",
+            "easing": "EASE_OUT",
+            "opacity": 0.9,
+            "duration": 4,
+            "position": "top-right",
+            "startTime": 0
+          }
+        ],
+        "transitionOut": {
+          "type": "LIGHT_WIPE",
+          "easing": "CUBIC_OUT",
+          "toScene": 2,
+          "duration": 0.4,
+          "fromScene": 1,
+          "intensity": "MEDIUM",
+          "rationale": "Luminous solution reveal"
+        },
+        "syncCues": [],
+        "background": {
+          "type": "AMBIENT_BLUR",
+          "primaryColor": "#6366F1",
+          "secondaryColor": "#EC4899"
+        },
+        "product": {
+          "visible": true,
+          "animationPreset": "CINEMATIC_PUSH_IN"
+        }
+      },
+      {
+        "sceneNumber": 2,
+        "startTime": 4,
+        "endTime": 8,
+        "duration": 4,
+        "mediaUrl": "https://videos.pexels.com/video-files/8691680/8691680-uhd_1440_2732_25fps.mp4",
+        "mediaType": "VIDEO",
+        "backgroundColor": "#6366F1",
+        "camera": [
+          {
+            "type": "PAN_LEFT",
+            "scale": 1.04,
+            "easing": "LINEAR",
+            "duration": 4,
+            "direction": "LEFT",
+            "intensity": "LOW",
+            "startTime": 4,
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          }
+        ],
+        "textAnimations": [
+          {
+            "exit": "FADE",
+            "easing": "SPRING",
+            "stagger": 0.12,
+            "duration": 3.6,
+            "emphasis": "SCALE_EMPHASIS",
+            "entrance": "WORD_POP",
+            "startTime": 4.2,
+            "targetText": "THE EVERYDAY STRUGGLE",
+            "emphasisWords": []
+          }
+        ],
+        "productAnimations": [],
+        "logoAnimations": [],
+        "transitionOut": {
+          "type": "CROSSFADE",
+          "easing": "CUBIC_IN_OUT",
+          "toScene": 3,
+          "duration": 0.35,
+          "fromScene": 2,
+          "intensity": "MEDIUM",
+          "rationale": "Smooth visual continuation"
+        },
+        "syncCues": [],
+        "background": {
+          "type": "AMBIENT_BLUR",
+          "primaryColor": "#6366F1",
+          "secondaryColor": "#EC4899"
+        },
+        "product": {
+          "visible": true,
+          "animationPreset": "CINEMATIC_PUSH_IN"
+        }
+      },
+      {
+        "sceneNumber": 3,
+        "startTime": 8,
+        "endTime": 13,
+        "duration": 5,
+        "mediaUrl": "/api/storage/files/assets/08fb56fd-6a02-4181-9168-8d7de2e593ae/1790452337002_img6.jpg",
+        "mediaType": "PRODUCT_IMAGE",
+        "backgroundColor": "#6366F1",
+        "camera": [
+          {
+            "type": "PAN_LEFT",
+            "scale": 1.04,
+            "easing": "LINEAR",
+            "duration": 5,
+            "direction": "LEFT",
+            "intensity": "LOW",
+            "startTime": 8,
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          }
+        ],
+        "textAnimations": [
+          {
+            "exit": "FADE",
+            "easing": "SPRING",
+            "stagger": 0.12,
+            "duration": 4.6,
+            "emphasis": "SCALE_EMPHASIS",
+            "entrance": "WORD_POP",
+            "startTime": 8.2,
+            "targetText": "BIOZYME PERFORMANCE WHEY – RICH CHOCOLATE, 1 KG",
+            "emphasisWords": []
+          }
+        ],
+        "productAnimations": [
+          {
+            "duration": 4.8,
+            "emphasis": true,
+            "productId": "a8b078eb-1f74-4ce4-9ba6-4001e3aed82b",
+            "startTime": 8.1,
+            "revealType": "HERO_REVEAL",
+            "scaleIntent": 1.15,
+            "isHeroMoment": true,
+            "positionIntent": "center",
+            "highlightIntent": true,
+            "backgroundTreatment": "RADIAL_DIM"
+          }
+        ],
+        "logoAnimations": [
+          {
+            "scale": 0.85,
+            "style": "MINIMAL_MARK",
+            "easing": "EASE_OUT",
+            "opacity": 0.9,
+            "duration": 5,
+            "position": "top-right",
+            "startTime": 8
+          }
+        ],
+        "transitionOut": {
+          "type": "CROSSFADE",
+          "easing": "CUBIC_IN_OUT",
+          "toScene": 4,
+          "duration": 0.35,
+          "fromScene": 3,
+          "intensity": "MEDIUM",
+          "rationale": "Smooth visual continuation"
+        },
+        "syncCues": [],
+        "background": {
+          "type": "AMBIENT_BLUR",
+          "primaryColor": "#6366F1",
+          "secondaryColor": "#EC4899"
+        },
+        "product": {
+          "visible": true,
+          "animationPreset": "CINEMATIC_PUSH_IN"
+        }
+      },
+      {
+        "sceneNumber": 4,
+        "startTime": 13,
+        "endTime": 18,
+        "duration": 5,
+        "mediaUrl": "/api/storage/files/assets/08fb56fd-6a02-4181-9168-8d7de2e593ae/1790452388044_img7.jpg",
+        "mediaType": "PRODUCT_IMAGE",
+        "backgroundColor": "#6366F1",
+        "camera": [
+          {
+            "type": "PAN_LEFT",
+            "scale": 1.04,
+            "easing": "LINEAR",
+            "duration": 5,
+            "direction": "LEFT",
+            "intensity": "LOW",
+            "startTime": 13,
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          }
+        ],
+        "textAnimations": [
+          {
+            "exit": "FADE",
+            "easing": "SPRING",
+            "stagger": 0.12,
+            "duration": 4.6,
+            "emphasis": "SCALE_EMPHASIS",
+            "entrance": "WORD_POP",
+            "startTime": 13.2,
+            "targetText": "25G PROTEIN",
+            "emphasisWords": []
+          }
+        ],
+        "productAnimations": [
+          {
+            "duration": 4.8,
+            "emphasis": true,
+            "productId": "a8b078eb-1f74-4ce4-9ba6-4001e3aed82b",
+            "startTime": 13.1,
+            "revealType": "HERO_REVEAL",
+            "scaleIntent": 1.15,
+            "isHeroMoment": true,
+            "positionIntent": "center",
+            "highlightIntent": true,
+            "backgroundTreatment": "RADIAL_DIM"
+          }
+        ],
+        "logoAnimations": [],
+        "transitionOut": {
+          "type": "CROSSFADE",
+          "easing": "CUBIC_IN_OUT",
+          "toScene": 5,
+          "duration": 0.35,
+          "fromScene": 4,
+          "intensity": "MEDIUM",
+          "rationale": "Smooth visual continuation"
+        },
+        "syncCues": [],
+        "background": {
+          "type": "AMBIENT_BLUR",
+          "primaryColor": "#6366F1",
+          "secondaryColor": "#EC4899"
+        },
+        "product": {
+          "visible": true,
+          "animationPreset": "CINEMATIC_PUSH_IN"
+        }
+      },
+      {
+        "sceneNumber": 5,
+        "startTime": 18,
+        "endTime": 23,
+        "duration": 5,
+        "mediaUrl": "/api/storage/files/assets/08fb56fd-6a02-4181-9168-8d7de2e593ae/1790452388044_img7.jpg",
+        "mediaType": "PRODUCT_IMAGE",
+        "backgroundColor": "#6366F1",
+        "camera": [
+          {
+            "type": "PAN_LEFT",
+            "scale": 1.04,
+            "easing": "LINEAR",
+            "duration": 5,
+            "direction": "LEFT",
+            "intensity": "LOW",
+            "startTime": 18,
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          }
+        ],
+        "textAnimations": [
+          {
+            "exit": "FADE",
+            "easing": "SPRING",
+            "stagger": 0.12,
+            "duration": 4.6,
+            "emphasis": "SCALE_EMPHASIS",
+            "entrance": "WORD_POP",
+            "startTime": 18.2,
+            "targetText": "RAPID RECOVERY",
+            "emphasisWords": []
+          }
+        ],
+        "productAnimations": [
+          {
+            "duration": 4.8,
+            "emphasis": true,
+            "productId": "a8b078eb-1f74-4ce4-9ba6-4001e3aed82b",
+            "startTime": 18.1,
+            "revealType": "HERO_REVEAL",
+            "scaleIntent": 1.15,
+            "isHeroMoment": true,
+            "positionIntent": "center",
+            "highlightIntent": true,
+            "backgroundTreatment": "RADIAL_DIM"
+          }
+        ],
+        "logoAnimations": [],
+        "transitionOut": {
+          "type": "CROSSFADE",
+          "easing": "CUBIC_IN_OUT",
+          "toScene": 6,
+          "duration": 0.35,
+          "fromScene": 5,
+          "intensity": "MEDIUM",
+          "rationale": "Smooth visual continuation"
+        },
+        "syncCues": [],
+        "background": {
+          "type": "AMBIENT_BLUR",
+          "primaryColor": "#6366F1",
+          "secondaryColor": "#EC4899"
+        },
+        "product": {
+          "visible": true,
+          "animationPreset": "CINEMATIC_PUSH_IN"
+        }
+      },
+      {
+        "sceneNumber": 6,
+        "startTime": 23,
+        "endTime": 27,
+        "duration": 4,
+        "mediaUrl": "/api/storage/files/assets/08fb56fd-6a02-4181-9168-8d7de2e593ae/1790452388044_img7.jpg",
+        "mediaType": "PRODUCT_IMAGE",
+        "backgroundColor": "#6366F1",
+        "camera": [
+          {
+            "type": "PAN_LEFT",
+            "scale": 1.04,
+            "easing": "LINEAR",
+            "duration": 4,
+            "direction": "LEFT",
+            "intensity": "LOW",
+            "startTime": 23,
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          }
+        ],
+        "textAnimations": [
+          {
+            "exit": "FADE",
+            "easing": "SPRING",
+            "stagger": 0.12,
+            "duration": 3.6,
+            "emphasis": "SCALE_EMPHASIS",
+            "entrance": "WORD_POP",
+            "startTime": 23.2,
+            "targetText": "MUSCLEBLAZE",
+            "emphasisWords": []
+          }
+        ],
+        "productAnimations": [
+          {
+            "duration": 3.8,
+            "emphasis": true,
+            "productId": "a8b078eb-1f74-4ce4-9ba6-4001e3aed82b",
+            "startTime": 23.1,
+            "revealType": "HERO_REVEAL",
+            "scaleIntent": 1.15,
+            "isHeroMoment": true,
+            "positionIntent": "center",
+            "highlightIntent": true,
+            "backgroundTreatment": "RADIAL_DIM"
+          }
+        ],
+        "logoAnimations": [
+          {
+            "scale": 0.85,
+            "style": "MINIMAL_MARK",
+            "easing": "EASE_OUT",
+            "opacity": 0.9,
+            "duration": 4,
+            "position": "top-right",
+            "startTime": 23
+          }
+        ],
+        "transitionOut": {
+          "type": "CROSSFADE",
+          "easing": "CUBIC_IN_OUT",
+          "toScene": 7,
+          "duration": 0.35,
+          "fromScene": 6,
+          "intensity": "MEDIUM",
+          "rationale": "Smooth visual continuation"
+        },
+        "syncCues": [],
+        "background": {
+          "type": "AMBIENT_BLUR",
+          "primaryColor": "#6366F1",
+          "secondaryColor": "#EC4899"
+        },
+        "product": {
+          "visible": true,
+          "animationPreset": "CINEMATIC_PUSH_IN"
+        }
+      },
+      {
+        "sceneNumber": 7,
+        "startTime": 27,
+        "endTime": 30,
+        "duration": 3,
+        "mediaUrl": "/api/storage/files/assets/08fb56fd-6a02-4181-9168-8d7de2e593ae/1790452292289_img2.webp",
+        "mediaType": "PRODUCT_IMAGE",
+        "backgroundColor": "#6366F1",
+        "camera": [
+          {
+            "type": "STATIC",
+            "scale": 1,
+            "easing": "LINEAR",
+            "duration": 3,
+            "intensity": "LOW",
+            "startTime": 27,
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          }
+        ],
+        "textAnimations": [
+          {
+            "exit": "NONE",
+            "easing": "SPRING",
+            "stagger": 0.05,
+            "duration": 2.5,
+            "emphasis": "PULSE",
+            "entrance": "EMPHASIS_PULSE",
+            "startTime": 27.3,
+            "targetText": "WHAT'S YOUR BIGGEST PROTEIN CHALLENGE? TELL US BELOW!",
+            "emphasisWords": []
+          }
+        ],
+        "productAnimations": [
+          {
+            "duration": 2.8,
+            "emphasis": true,
+            "productId": "a8b078eb-1f74-4ce4-9ba6-4001e3aed82b",
+            "startTime": 27.1,
+            "revealType": "HERO_REVEAL",
+            "scaleIntent": 1.15,
+            "isHeroMoment": true,
+            "positionIntent": "center",
+            "highlightIntent": true,
+            "backgroundTreatment": "RADIAL_DIM"
+          }
+        ],
+        "logoAnimations": [
+          {
+            "scale": 1.1,
+            "style": "SCALE",
+            "easing": "SPRING",
+            "opacity": 1,
+            "duration": 2.2,
+            "position": "center",
+            "startTime": 27.5
+          }
+        ],
+        "syncCues": [],
+        "background": {
+          "type": "AMBIENT_BLUR",
+          "primaryColor": "#6366F1",
+          "secondaryColor": "#EC4899"
+        },
+        "product": {
+          "visible": true,
+          "animationPreset": "CINEMATIC_PUSH_IN"
+        }
+      }
+    ],
+    "audio": {
+      "voiceTrackUrl": "/api/storage/files/reels/259336e4-9ab3-43d0-bf5d-ee94a7202d9c/voice/voice_1790459091010.wav",
+      "sfxTracks": [],
+      "ducking": {
+        "enabled": true,
+        "musicAttenuationDb": 14,
+        "attackMs": 200,
+        "releaseMs": 500
+      }
+    },
+    "brand": {
+      "primaryColor": "#6366F1",
+      "secondaryColor": "#EC4899",
+      "accentColor": "#3B82F6",
+      "fontFamily": "Outfit"
+    },
+    "reducedMotion": false
+  }
+}

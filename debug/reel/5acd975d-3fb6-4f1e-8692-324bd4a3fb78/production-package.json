@@ -11,8 +11,8 @@
         "id": "asset-prod-1",
         "type": "IMAGE",
         "role": "PRODUCT",
-        "localPath": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_p8_314tex\\product.png",
-        "storageUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_p8_314tex\\product.png"
+        "localPath": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_p8_vx81Ox\\product.png",
+        "storageUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_p8_vx81Ox\\product.png"
       }
     ],
     "scenes": [
@@ -24,6 +24,6 @@
       }
     ]
   },
-  "createdAt": "2026-09-21T10:02:58.735Z",
-  "updatedAt": "2026-09-21T10:02:58.735Z"
+  "createdAt": "2026-09-27T10:32:28.713Z",
+  "updatedAt": "2026-09-27T10:32:28.713Z"
 }

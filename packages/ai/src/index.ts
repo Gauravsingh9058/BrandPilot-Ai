@@ -162,7 +162,7 @@ async function withRetryAndTimeout<T>(
     );
   }
 
-  const envRetries = process.env.GEMINI_MAX_RETRIES ? parseInt(process.env.GEMINI_MAX_RETRIES, 10) : 2;
+  const envRetries = process.env.GEMINI_MAX_RETRIES ? parseInt(process.env.GEMINI_MAX_RETRIES, 10) : 3;
   const maxRetries = options?.maxRetries ?? envRetries;
   const timeoutMs = options?.timeoutMs ?? 30000;
   const initialDelayMs = options?.initialDelayMs ?? 500;
@@ -271,12 +271,14 @@ export class GeminiProvider implements AIProvider {
   public readonly providerName = 'gemini';
   private ai: GoogleGenAI | null = null;
   private defaultModel: string;
+  private fallbackModel: string;
   private apiKey: string;
   private fallbackProvider: MockAIProvider;
 
   constructor(config: AIProviderConfig) {
     this.apiKey = config.apiKey || '';
     this.defaultModel = normalizeGeminiModel(config.modelName);
+    this.fallbackModel = normalizeGeminiModel(process.env.GEMINI_FALLBACK_MODEL || 'gemini-2.5-flash');
     this.fallbackProvider = new MockAIProvider();
     if (this.apiKey) {
       this.ai = new GoogleGenAI({ apiKey: this.apiKey });
@@ -305,31 +307,61 @@ export class GeminiProvider implements AIProvider {
       return this.fallbackProvider.generateText(prompt, options);
     }
 
-    return withRetryAndTimeout(async () => {
-      const client = this.getClient();
-      const model = normalizeGeminiModel(options?.model || this.defaultModel);
+    const primaryModel = normalizeGeminiModel(options?.model || this.defaultModel);
+    const retryOpts = options?.timeoutMs ? { timeoutMs: options.timeoutMs } : undefined;
+    try {
+      return await withRetryAndTimeout(async () => {
+        const client = this.getClient();
+        const response = await client.models.generateContent({
+          model: primaryModel,
+          contents: prompt,
+          config: {
+            temperature: options?.temperature,
+            maxOutputTokens: options?.maxTokens,
+            systemInstruction: options?.systemInstruction
+          }
+        });
 
-      const response = await client.models.generateContent({
-        model,
-        contents: prompt,
-        config: {
-          temperature: options?.temperature,
-          maxOutputTokens: options?.maxTokens,
-          systemInstruction: options?.systemInstruction
-        }
-      });
+        const text = response.text || '';
+        return {
+          text,
+          finishReason: response.candidates?.[0]?.finishReason,
+          usage: {
+            promptTokens: response.usageMetadata?.promptTokenCount ?? 0,
+            completionTokens: response.usageMetadata?.candidatesTokenCount ?? 0,
+            totalTokens: response.usageMetadata?.totalTokenCount ?? 0
+          }
+        };
+      }, retryOpts);
+    } catch (err) {
+      if (primaryModel !== this.fallbackModel && !(err instanceof AIProviderAuthError) && !(err instanceof AIProviderRateLimitError)) {
+        console.warn(`[GeminiProvider] Primary model ${primaryModel} failed. Attempting fallback model ${this.fallbackModel}...`);
+        return await withRetryAndTimeout(async () => {
+          const client = this.getClient();
+          const response = await client.models.generateContent({
+            model: this.fallbackModel,
+            contents: prompt,
+            config: {
+              temperature: options?.temperature,
+              maxOutputTokens: options?.maxTokens,
+              systemInstruction: options?.systemInstruction
+            }
+          });
 
-      const text = response.text || '';
-      return {
-        text,
-        finishReason: response.candidates?.[0]?.finishReason,
-        usage: {
-          promptTokens: response.usageMetadata?.promptTokenCount ?? 0,
-          completionTokens: response.usageMetadata?.candidatesTokenCount ?? 0,
-          totalTokens: response.usageMetadata?.totalTokenCount ?? 0
-        }
-      };
-    });
+          const text = response.text || '';
+          return {
+            text,
+            finishReason: response.candidates?.[0]?.finishReason,
+            usage: {
+              promptTokens: response.usageMetadata?.promptTokenCount ?? 0,
+              completionTokens: response.usageMetadata?.candidatesTokenCount ?? 0,
+              totalTokens: response.usageMetadata?.totalTokenCount ?? 0
+            }
+          };
+        }, retryOpts);
+      }
+      throw err;
+    }
   }
 
   async generateStructured<T>(
@@ -346,29 +378,57 @@ export class GeminiProvider implements AIProvider {
       return this.fallbackProvider.generateStructured<T>(prompt, schema, options);
     }
 
-    return withRetryAndTimeout(async () => {
-      const client = this.getClient();
-      const model = normalizeGeminiModel(options?.model || this.defaultModel);
+    const primaryModel = normalizeGeminiModel(options?.model || this.defaultModel);
+    const retryOpts = options?.timeoutMs ? { timeoutMs: options.timeoutMs } : undefined;
+    try {
+      return await withRetryAndTimeout(async () => {
+        const client = this.getClient();
+        const response = await client.models.generateContent({
+          model: primaryModel,
+          contents: prompt,
+          config: {
+            temperature: options?.temperature,
+            maxOutputTokens: options?.maxTokens,
+            systemInstruction: options?.systemInstruction,
+            responseMimeType: 'application/json',
+            responseSchema: schema as Record<string, unknown>
+          }
+        });
 
-      const response = await client.models.generateContent({
-        model,
-        contents: prompt,
-        config: {
-          temperature: options?.temperature,
-          maxOutputTokens: options?.maxTokens,
-          systemInstruction: options?.systemInstruction,
-          responseMimeType: 'application/json',
-          responseSchema: schema as Record<string, unknown>
+        const text = response.text;
+        if (!text) {
+          throw new AIProviderError('[GeminiProvider] Received empty response from model', 'EMPTY_RESPONSE');
         }
-      });
 
-      const text = response.text;
-      if (!text) {
-        throw new AIProviderError('[GeminiProvider] Received empty response from model', 'EMPTY_RESPONSE');
+        return JSON.parse(text) as T;
+      }, retryOpts);
+    } catch (err) {
+      if (primaryModel !== this.fallbackModel && !(err instanceof AIProviderAuthError) && !(err instanceof AIProviderRateLimitError)) {
+        console.warn(`[GeminiProvider] Primary model ${primaryModel} failed for structured generation. Attempting fallback model ${this.fallbackModel}...`);
+        return await withRetryAndTimeout(async () => {
+          const client = this.getClient();
+          const response = await client.models.generateContent({
+            model: this.fallbackModel,
+            contents: prompt,
+            config: {
+              temperature: options?.temperature,
+              maxOutputTokens: options?.maxTokens,
+              systemInstruction: options?.systemInstruction,
+              responseMimeType: 'application/json',
+              responseSchema: schema as Record<string, unknown>
+            }
+          });
+
+          const text = response.text;
+          if (!text) {
+            throw new AIProviderError('[GeminiProvider] Received empty response from model', 'EMPTY_RESPONSE');
+          }
+
+          return JSON.parse(text) as T;
+        }, retryOpts);
       }
-
-      return JSON.parse(text) as T;
-    });
+      throw err;
+    }
   }
 }
 

@@ -28,19 +28,29 @@ export class MediaAssetDownloader {
 
     const trimmed = sourceUrl.trim();
 
-    // Case 1: Remote HTTP/HTTPS URL
-    if (trimmed.startsWith('http://') || trimmed.startsWith('https://')) {
-      return this.downloadRemoteFile(trimmed, targetDir, prefix);
-    }
+    // Case 1: Internal storage path or URL containing /api/storage/files/
+    if (trimmed.includes('/api/storage/files/')) {
+      const idx = trimmed.indexOf('/api/storage/files/');
+      const rawKey = trimmed.slice(idx + '/api/storage/files/'.length).split('?')[0].split('#')[0];
+      let storageKey = rawKey;
+      try {
+        storageKey = decodeURIComponent(rawKey);
+      } catch {
+        storageKey = rawKey;
+      }
 
-    // Case 2: Local storage file URL (/api/storage/files/<key>)
-    if (trimmed.startsWith('/api/storage/files/')) {
-      const storageKey = trimmed.replace('/api/storage/files/', '');
       const candidatePaths = [
         path.resolve(process.cwd(), 'uploads', storageKey),
         path.resolve(process.cwd(), 'apps/api/uploads', storageKey),
-        path.resolve(process.cwd(), 'apps/worker/uploads', storageKey)
+        path.resolve(process.cwd(), 'apps/worker/uploads', storageKey),
+        path.resolve(process.cwd(), 'apps/web/uploads', storageKey),
+        path.resolve(process.cwd(), storageKey)
       ];
+
+      if (storageKey.startsWith('uploads/') || storageKey.startsWith('uploads\\')) {
+        const subKey = storageKey.replace(/^uploads[/\\]/, '');
+        candidatePaths.push(path.resolve(process.cwd(), 'uploads', subKey));
+      }
 
       for (const candidate of candidatePaths) {
         if (fs.existsSync(candidate)) {
@@ -55,10 +65,27 @@ export class MediaAssetDownloader {
         }
       }
 
+      // If it's a full remote HTTP URL (not localhost), attempt download
+      if (trimmed.startsWith('http://') || trimmed.startsWith('https://')) {
+        try {
+          const parsed = new URL(trimmed);
+          if (parsed.hostname !== 'localhost' && parsed.hostname !== '127.0.0.1') {
+            return await this.downloadRemoteFile(trimmed, targetDir, prefix);
+          }
+        } catch {
+          // Fall through
+        }
+      }
+
       return {
         success: false,
         error: `Local storage file for key "${storageKey}" not found on disk.`
       };
+    }
+
+    // Case 2: Remote HTTP/HTTPS URL
+    if (trimmed.startsWith('http://') || trimmed.startsWith('https://')) {
+      return this.downloadRemoteFile(trimmed, targetDir, prefix);
     }
 
     // Case 3: Direct local filesystem path
@@ -72,6 +99,18 @@ export class MediaAssetDownloader {
         return {
           success: true,
           localPath: directCandidate,
+          sizeBytes: stats.size
+        };
+      }
+    }
+
+    const uploadsCandidate = path.resolve(process.cwd(), 'uploads', trimmed);
+    if (fs.existsSync(uploadsCandidate)) {
+      const stats = await fs.promises.stat(uploadsCandidate);
+      if (stats.size > 0) {
+        return {
+          success: true,
+          localPath: uploadsCandidate,
           sizeBytes: stats.size
         };
       }

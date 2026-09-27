@@ -1,6 +1,6 @@
 import { eq, and, desc } from 'drizzle-orm';
 import type { Database } from '@vidsnapai/database';
-import { brandAssets, type BrandAssetRow, type NewBrandAssetRow } from '@vidsnapai/database';
+import { brandAssets, reelAssets, type BrandAssetRow, type NewBrandAssetRow } from '@vidsnapai/database';
 import type {
   BrandAsset,
   CreateBrandAssetInput,
@@ -111,6 +111,21 @@ export class AssetRepository {
       .where(and(eq(brandAssets.id, assetId), eq(brandAssets.brandId, brandId)))
       .limit(1);
     return found ? mapAssetRow(found) : null;
+  }
+
+  async checkActiveReferences(assetId: string): Promise<number> {
+    if (!this.db || typeof this.db.select !== 'function') {
+      return 0;
+    }
+    try {
+      const rows = await this.db
+        .select()
+        .from(reelAssets)
+        .where(eq(reelAssets.providerAssetId, assetId));
+      return rows.length;
+    } catch {
+      return 0;
+    }
   }
 
   async delete(assetId: string, brandId: string): Promise<boolean> {

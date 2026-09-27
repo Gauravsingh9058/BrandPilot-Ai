@@ -1,7 +1,17 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { BrandService } from '@vidsnapai/brand';
 import type { Database } from '@vidsnapai/database';
-import type { AIProvider, Brand, BrandProduct, BrandAsset, BrandDNA } from '@vidsnapai/types';
+import type {
+  AIProvider,
+  Brand,
+  BrandProduct,
+  BrandAsset,
+  BrandDNA,
+  CreateBrandInput,
+  UpdateBrandInput,
+  CreateProductInput,
+  CreateBrandAssetInput
+} from '@vidsnapai/types';
 
 describe('Brand API & Multi-Tenant Isolation Tests', () => {
   let brandService: BrandService;
@@ -29,7 +39,7 @@ describe('Brand API & Multi-Tenant Isolation Tests', () => {
     brandService = new BrandService(mockDb, mockAiProvider);
 
     // Mock BrandRepo
-    vi.spyOn(brandService['brandRepo'], 'create').mockImplementation(async (workspaceId, input, slug) => {
+    vi.spyOn(brandService['brandRepo'], 'create').mockImplementation(async (workspaceId: string, input: CreateBrandInput, slug: string): Promise<Brand> => {
       const brand: Brand = {
         id: `brand-${Math.random().toString(36).substring(2, 8)}`,
         workspaceId,
@@ -59,19 +69,19 @@ describe('Brand API & Multi-Tenant Isolation Tests', () => {
       return brand;
     });
 
-    vi.spyOn(brandService['brandRepo'], 'listForWorkspace').mockImplementation(async (workspaceId) => {
+    vi.spyOn(brandService['brandRepo'], 'listForWorkspace').mockImplementation(async (workspaceId: string): Promise<Brand[]> => {
       return brandsTable.filter((b) => b.workspaceId === workspaceId);
     });
 
-    vi.spyOn(brandService['brandRepo'], 'findByIdAndWorkspace').mockImplementation(async (brandId, workspaceId) => {
+    vi.spyOn(brandService['brandRepo'], 'findByIdAndWorkspace').mockImplementation(async (brandId: string, workspaceId: string): Promise<Brand | null> => {
       return brandsTable.find((b) => b.id === brandId && b.workspaceId === workspaceId) || null;
     });
 
-    vi.spyOn(brandService['brandRepo'], 'findById').mockImplementation(async (brandId) => {
+    vi.spyOn(brandService['brandRepo'], 'findById').mockImplementation(async (brandId: string): Promise<Brand | null> => {
       return brandsTable.find((b) => b.id === brandId) || null;
     });
 
-    vi.spyOn(brandService['brandRepo'], 'update').mockImplementation(async (brandId, workspaceId, input) => {
+    vi.spyOn(brandService['brandRepo'], 'update').mockImplementation(async (brandId: string, workspaceId: string, input: UpdateBrandInput): Promise<Brand | null> => {
       const brand = brandsTable.find((b) => b.id === brandId && b.workspaceId === workspaceId);
       if (!brand) return null;
       if (input.name) brand.name = input.name;
@@ -80,14 +90,14 @@ describe('Brand API & Multi-Tenant Isolation Tests', () => {
       return brand;
     });
 
-    vi.spyOn(brandService['brandRepo'], 'delete').mockImplementation(async (brandId, workspaceId) => {
+    vi.spyOn(brandService['brandRepo'], 'delete').mockImplementation(async (brandId: string, workspaceId: string): Promise<boolean> => {
       const initial = brandsTable.length;
       brandsTable = brandsTable.filter((b) => !(b.id === brandId && b.workspaceId === workspaceId));
       return brandsTable.length < initial;
     });
 
     // Mock ProductRepo
-    vi.spyOn(brandService['productRepo'], 'create').mockImplementation(async (brandId, input) => {
+    vi.spyOn(brandService['productRepo'], 'create').mockImplementation(async (brandId: string, input: CreateProductInput): Promise<BrandProduct> => {
       const prod: BrandProduct = {
         id: `prod-${Math.random().toString(36).substring(2, 8)}`,
         brandId,
@@ -110,22 +120,22 @@ describe('Brand API & Multi-Tenant Isolation Tests', () => {
       return prod;
     });
 
-    vi.spyOn(brandService['productRepo'], 'listForBrand').mockImplementation(async (brandId) => {
+    vi.spyOn(brandService['productRepo'], 'listForBrand').mockImplementation(async (brandId: string): Promise<BrandProduct[]> => {
       return productsTable.filter((p) => p.brandId === brandId);
     });
 
-    vi.spyOn(brandService['productRepo'], 'findById').mockImplementation(async (productId, brandId) => {
+    vi.spyOn(brandService['productRepo'], 'findById').mockImplementation(async (productId: string, brandId: string): Promise<BrandProduct | null> => {
       return productsTable.find((p) => p.id === productId && p.brandId === brandId) || null;
     });
 
-    vi.spyOn(brandService['productRepo'], 'delete').mockImplementation(async (productId, brandId) => {
+    vi.spyOn(brandService['productRepo'], 'delete').mockImplementation(async (productId: string, brandId: string): Promise<boolean> => {
       const initial = productsTable.length;
       productsTable = productsTable.filter((p) => !(p.id === productId && p.brandId === brandId));
       return productsTable.length < initial;
     });
 
     // Mock AssetRepo
-    vi.spyOn(brandService['assetRepo'], 'create').mockImplementation(async (brandId, input) => {
+    vi.spyOn(brandService['assetRepo'], 'create').mockImplementation(async (brandId: string, input: CreateBrandAssetInput): Promise<BrandAsset> => {
       const asset: BrandAsset = {
         id: `asset-${Math.random().toString(36).substring(2, 8)}`,
         brandId,
@@ -140,12 +150,26 @@ describe('Brand API & Multi-Tenant Isolation Tests', () => {
       return asset;
     });
 
-    vi.spyOn(brandService['assetRepo'], 'listForBrand').mockImplementation(async (brandId) => {
+    vi.spyOn(brandService['assetRepo'], 'listForBrand').mockImplementation(async (brandId: string): Promise<BrandAsset[]> => {
       return assetsTable.filter((a) => a.brandId === brandId);
     });
 
+    vi.spyOn(brandService['assetRepo'], 'findById').mockImplementation(async (assetId: string, brandId: string): Promise<BrandAsset | null> => {
+      return assetsTable.find((a) => a.id === assetId && a.brandId === brandId) || null;
+    });
+
+    vi.spyOn(brandService['assetRepo'], 'checkActiveReferences').mockImplementation(async (_assetId: string): Promise<number> => {
+      return 0;
+    });
+
+    vi.spyOn(brandService['assetRepo'], 'delete').mockImplementation(async (assetId: string, brandId: string): Promise<boolean> => {
+      const initial = assetsTable.length;
+      assetsTable = assetsTable.filter((a) => !(a.id === assetId && a.brandId === brandId));
+      return assetsTable.length < initial;
+    });
+
     // Mock DnaRepo
-    vi.spyOn(brandService['dnaRepo'], 'findLatestByBrandId').mockImplementation(async (brandId) => {
+    vi.spyOn(brandService['dnaRepo'], 'findLatestByBrandId').mockImplementation(async (brandId: string): Promise<BrandDNA | null> => {
       const list = dnaTable.filter((d) => d.brandId === brandId).sort((a, b) => b.version - a.version);
       return list[0] || null;
     });
@@ -232,6 +256,75 @@ describe('Brand API & Multi-Tenant Isolation Tests', () => {
 
       const assets = await brandService.listAssets(brand.id, 'ws-alpha');
       expect(assets.length).toBe(1);
+    });
+
+    it('deletes an unused brand asset successfully and removes it from list', async () => {
+      const brand = await brandService.createBrand('ws-alpha', {
+        name: 'Alpha Brand',
+        description: 'Design suite',
+        industry: 'Design'
+      });
+
+      const asset = await brandService.createAsset(brand.id, 'ws-alpha', {
+        name: 'Old Banner Image',
+        type: 'brand_image',
+        storageKey: 'banners/old.png',
+        url: 'https://cdn.example.com/banners/old.png'
+      });
+
+      expect((await brandService.listAssets(brand.id, 'ws-alpha')).length).toBe(1);
+
+      const deleteRes = await brandService.deleteAsset(asset.id, brand.id, 'ws-alpha');
+      expect(deleteRes.success).toBe(true);
+
+      const remaining = await brandService.listAssets(brand.id, 'ws-alpha');
+      expect(remaining.length).toBe(0);
+    });
+
+    it('blocks deletion of an asset referenced in active production unless force=true', async () => {
+      const brand = await brandService.createBrand('ws-alpha', {
+        name: 'Alpha Brand',
+        description: 'Design suite',
+        industry: 'Design'
+      });
+
+      const asset = await brandService.createAsset(brand.id, 'ws-alpha', {
+        name: 'Hero Bottle Photo',
+        type: 'product_image',
+        storageKey: 'products/hero.png',
+        url: 'https://cdn.example.com/products/hero.png'
+      });
+
+      // Simulate 2 active references
+      vi.spyOn(brandService['assetRepo'], 'checkActiveReferences').mockResolvedValueOnce(2);
+
+      const deleteRes = await brandService.deleteAsset(asset.id, brand.id, 'ws-alpha');
+      expect(deleteRes.success).toBe(false);
+      expect(deleteRes.code).toBe('ASSET_IN_USE');
+
+      // Now force deletion
+      const forceDeleteRes = await brandService.deleteAsset(asset.id, brand.id, 'ws-alpha', { force: true });
+      expect(forceDeleteRes.success).toBe(true);
+    });
+
+    it('returns error when attempting to delete an asset from an unauthorized workspace', async () => {
+      const brand = await brandService.createBrand('ws-alpha', {
+        name: 'Alpha Brand',
+        description: 'Design suite',
+        industry: 'Design'
+      });
+
+      const asset = await brandService.createAsset(brand.id, 'ws-alpha', {
+        name: 'Alpha Logo',
+        type: 'logo',
+        storageKey: 'logos/alpha.png',
+        url: 'https://cdn.example.com/alpha.png'
+      });
+
+      // Attempt to delete from ws-beta
+      const deleteRes = await brandService.deleteAsset(asset.id, brand.id, 'ws-beta');
+      expect(deleteRes.success).toBe(false);
+      expect(deleteRes.code).toBe('BRAND_NOT_FOUND');
     });
   });
 });

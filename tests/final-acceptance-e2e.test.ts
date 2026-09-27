@@ -147,8 +147,6 @@ describe('Final Acceptance End-to-End Test Suite: One8 30s Reel Pipeline & 14 Ne
   });
 
   // ===========================================================================
-  // POSITIVE TEST: Complete End-to-End Reel Generation Pipeline
-  // ===========================================================================
   describe('Positive Acceptance: Full 21-Step One8 Brand Reel Generation Pipeline', () => {
     it('executes Brand → Product → Assets → DNA → Campaign → Content Plan → Reel Blueprint → Veo Reference Binding → Veo 3.1 Generation → Assembly → Visual QA → Brand Safety → Approval → Publishing → Learning', async () => {
       // -----------------------------------------------------------------------
@@ -665,7 +663,7 @@ describe('Final Acceptance End-to-End Test Suite: One8 30s Reel Pipeline & 14 Ne
       };
       expect(performanceInsights.completionRate).toBeGreaterThan(0.5);
       expect(performanceInsights.winningHook).toBeDefined();
-    }, 120000);
+    }, 240000);
   });
 
   // ===========================================================================

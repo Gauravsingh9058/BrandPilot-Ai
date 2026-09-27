@@ -57,8 +57,8 @@
       }
     ],
     "status": "QUALITY_CHECK",
-    "createdAt": "2026-09-21T10:01:38.882Z",
-    "updatedAt": "2026-09-21T10:01:38.882Z"
+    "createdAt": "2026-09-27T10:31:37.902Z",
+    "updatedAt": "2026-09-27T10:31:37.902Z"
   },
   "spec": {
     "width": 1080,
@@ -72,7 +72,7 @@
         "startTime": 0,
         "endTime": 7.5,
         "duration": 7.5,
-        "mediaUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_3yJQkO\\scene_1_asset.png",
+        "mediaUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_49QYTW\\scene_1_asset.png",
         "mediaType": "IMAGE",
         "backgroundColor": "#1E293B",
         "camera": [
@@ -106,7 +106,7 @@
         "startTime": 7.5,
         "endTime": 15,
         "duration": 7.5,
-        "mediaUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_3yJQkO\\scene_2_asset.png",
+        "mediaUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_49QYTW\\scene_2_asset.png",
         "mediaType": "IMAGE",
         "backgroundColor": "#1E293B",
         "camera": [
@@ -140,7 +140,7 @@
         "startTime": 15,
         "endTime": 22.5,
         "duration": 7.5,
-        "mediaUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_3yJQkO\\scene_3_asset.png",
+        "mediaUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_49QYTW\\scene_3_asset.png",
         "mediaType": "IMAGE",
         "backgroundColor": "#1E293B",
         "camera": [
@@ -174,7 +174,7 @@
         "startTime": 22.5,
         "endTime": 30,
         "duration": 7.5,
-        "mediaUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_3yJQkO\\scene_4_asset.png",
+        "mediaUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_49QYTW\\scene_4_asset.png",
         "mediaType": "IMAGE",
         "backgroundColor": "#1E293B",
         "camera": [
@@ -205,8 +205,8 @@
       }
     ],
     "audio": {
-      "voiceTrackUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_3yJQkO\\voice.mp3",
-      "musicTrackUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_3yJQkO\\music.mp3",
+      "voiceTrackUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_49QYTW\\voice.mp3",
+      "musicTrackUrl": "C:\\Users\\gaura\\AppData\\Local\\Temp\\vidsnapai_qa_test_49QYTW\\music.mp3",
       "sfxTracks": [],
       "ducking": {
         "enabled": true,

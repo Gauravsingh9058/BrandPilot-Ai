@@ -9,7 +9,9 @@ import {
   Volume2,
   ChevronRight,
   Upload,
-  Clock
+  Clock,
+  Trash2,
+  AlertTriangle
 } from 'lucide-react';
 import { apiRequest } from '../lib/api.js';
 import { LoadingSpinner } from '../components/LoadingSpinner.js';
@@ -29,7 +31,14 @@ export const BrandAssetLibraryPage: React.FC = () => {
   const [reelAssets, setReelAssets] = useState<ReelAsset[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
+  const [successToast, setSuccessToast] = useState('');
   const [activeTab, setActiveTab] = useState<'ALL' | 'BRAND' | 'REEL' | 'VOICE' | 'MUSIC' | 'SFX'>('ALL');
+
+  // Delete modal state
+  const [isDeleteOpen, setIsDeleteOpen] = useState(false);
+  const [assetToDelete, setAssetToDelete] = useState<{ id: string; name: string; type: string; previewUrl?: string } | null>(null);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [deleteError, setDeleteError] = useState('');
 
   // Upload modal state
   const [isUploadOpen, setIsUploadOpen] = useState(false);
@@ -96,6 +105,36 @@ export const BrandAssetLibraryPage: React.FC = () => {
       alert(err instanceof Error ? err.message : 'Failed to assign product');
     } finally {
       setIsAssigning(false);
+    }
+  };
+
+  const openDeleteModal = (asset: { id: string; name: string; type: string; previewUrl?: string }) => {
+    setAssetToDelete(asset);
+    setDeleteError('');
+    setIsDeleteOpen(true);
+  };
+
+  const handleDeleteAsset = async () => {
+    if (!brandId || !assetToDelete) return;
+
+    setIsDeleting(true);
+    setDeleteError('');
+
+    try {
+      await apiRequest(`/api/brands/${brandId}/assets/${assetToDelete.id}`, {
+        method: 'DELETE'
+      });
+
+      // Optimistically remove from state immediately
+      setBrandAssets((prev) => prev.filter((a) => a.id !== assetToDelete.id));
+      setIsDeleteOpen(false);
+      setSuccessToast(`Asset "${assetToDelete.name}" deleted successfully.`);
+      setAssetToDelete(null);
+      setTimeout(() => setSuccessToast(''), 4000);
+    } catch (err: unknown) {
+      setDeleteError(err instanceof Error ? err.message : 'Failed to delete asset');
+    } finally {
+      setIsDeleting(false);
     }
   };
 
@@ -230,6 +269,27 @@ export const BrandAssetLibraryPage: React.FC = () => {
       </div>
 
       {error && <ErrorBanner message={error} style={{ marginBottom: '1.5rem' }} />}
+
+      {successToast && (
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.5rem',
+            padding: '0.75rem 1rem',
+            borderRadius: 'var(--radius-md)',
+            background: 'rgba(16, 185, 129, 0.15)',
+            border: '1px solid rgba(16, 185, 129, 0.3)',
+            color: '#34d399',
+            fontSize: '0.875rem',
+            fontWeight: 500,
+            marginBottom: '1.5rem'
+          }}
+        >
+          <span>✓</span>
+          <span>{successToast}</span>
+        </div>
+      )}
 
       {/* Hero Header */}
       <div
@@ -407,21 +467,51 @@ export const BrandAssetLibraryPage: React.FC = () => {
                   </h4>
                 </div>
 
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.75rem', color: 'var(--text-muted)', paddingTop: '0.75rem', borderTop: '1px solid var(--border-subtle)' }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.75rem', color: 'var(--text-muted)', paddingTop: '0.75rem', borderTop: '1px solid var(--border-subtle)', gap: '0.5rem' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
                     <Clock size={12} />
                     <span>{asset.duration ? `${asset.duration.toFixed(1)}s` : 'Standard'}</span>
                   </div>
-                  {asset.source === 'BRAND_LIBRARY' && (
-                    <Button
-                      variant="secondary"
-                      onClick={() => openAssignModalForAsset(asset.id, asset.name, asset.productId, asset.assetPurpose, asset.productionEligible)}
-                      style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem' }}
-                    >
-                      Assign Product
-                    </Button>
-                  )}
-                  {asset.dimensions && <span>{asset.dimensions}</span>}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                    {asset.source === 'BRAND_LIBRARY' && (
+                      <>
+                        <Button
+                          variant="secondary"
+                          onClick={() => openAssignModalForAsset(asset.id, asset.name, asset.productId, asset.assetPurpose, asset.productionEligible)}
+                          style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem' }}
+                        >
+                          Assign
+                        </Button>
+                        <button
+                          type="button"
+                          onClick={() => openDeleteModal({ id: asset.id, name: asset.name, type: asset.type, previewUrl: asset.previewUrl || undefined })}
+                          title="Delete Asset"
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            width: '28px',
+                            height: '28px',
+                            borderRadius: 'var(--radius-sm)',
+                            background: 'rgba(239, 68, 68, 0.1)',
+                            border: '1px solid rgba(239, 68, 68, 0.25)',
+                            color: '#ef4444',
+                            cursor: 'pointer',
+                            transition: 'all 0.15s ease'
+                          }}
+                          onMouseEnter={(e) => {
+                            e.currentTarget.style.background = 'rgba(239, 68, 68, 0.25)';
+                          }}
+                          onMouseLeave={(e) => {
+                            e.currentTarget.style.background = 'rgba(239, 68, 68, 0.1)';
+                          }}
+                        >
+                          <Trash2 size={13} />
+                        </button>
+                      </>
+                    )}
+                    {asset.dimensions && <span>{asset.dimensions}</span>}
+                  </div>
                 </div>
               </div>
             </div>
@@ -573,6 +663,113 @@ export const BrandAssetLibraryPage: React.FC = () => {
             </Button>
           </div>
         </form>
+      </Modal>
+
+      {/* Delete Asset Confirmation Modal */}
+      <Modal
+        isOpen={isDeleteOpen}
+        onClose={() => !isDeleting && setIsDeleteOpen(false)}
+        title="Delete asset?"
+      >
+        <div>
+          {deleteError && <ErrorBanner message={deleteError} style={{ marginBottom: '1rem' }} />}
+
+          {assetToDelete && (
+            <div style={{ marginBottom: '1.5rem' }}>
+              <div
+                style={{
+                  display: 'flex',
+                  gap: '1rem',
+                  alignItems: 'center',
+                  background: 'var(--bg-secondary)',
+                  padding: '1rem',
+                  borderRadius: 'var(--radius-md)',
+                  border: '1px solid var(--border-subtle)',
+                  marginBottom: '1rem'
+                }}
+              >
+                {assetToDelete.previewUrl ? (
+                  <img
+                    src={assetToDelete.previewUrl}
+                    alt={assetToDelete.name}
+                    style={{
+                      width: '56px',
+                      height: '56px',
+                      objectFit: 'cover',
+                      borderRadius: 'var(--radius-sm)'
+                    }}
+                  />
+                ) : (
+                  <div
+                    style={{
+                      width: '56px',
+                      height: '56px',
+                      borderRadius: 'var(--radius-sm)',
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      color: 'var(--text-muted)'
+                    }}
+                  >
+                    <FolderArchive size={24} />
+                  </div>
+                )}
+                <div>
+                  <h4 style={{ margin: '0 0 0.25rem 0', fontSize: '0.9375rem', fontWeight: 600, color: 'var(--text-primary)' }}>
+                    {assetToDelete.name}
+                  </h4>
+                  <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: 700 }}>
+                    Type: {assetToDelete.type}
+                  </span>
+                </div>
+              </div>
+
+              <div
+                style={{
+                  display: 'flex',
+                  gap: '0.75rem',
+                  alignItems: 'flex-start',
+                  background: 'rgba(239, 68, 68, 0.1)',
+                  border: '1px solid rgba(239, 68, 68, 0.25)',
+                  padding: '0.875rem 1rem',
+                  borderRadius: 'var(--radius-md)',
+                  color: '#fca5a5',
+                  fontSize: '0.875rem',
+                  lineHeight: '1.4'
+                }}
+              >
+                <AlertTriangle size={18} style={{ flexShrink: 0, marginTop: '2px', color: '#ef4444' }} />
+                <div>
+                  <strong style={{ color: '#f87171' }}>This action is permanent.</strong>
+                  <p style={{ margin: '0.25rem 0 0 0', color: 'var(--text-secondary)', fontSize: '0.8125rem' }}>
+                    Deleting this asset will remove it from the brand library and storage. Active reels or product references depending on this asset may be affected.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '0.75rem' }}>
+            <Button
+              type="button"
+              variant="secondary"
+              onClick={() => setIsDeleteOpen(false)}
+              disabled={isDeleting}
+            >
+              Cancel
+            </Button>
+            <Button
+              type="button"
+              variant="danger"
+              onClick={handleDeleteAsset}
+              isLoading={isDeleting}
+              disabled={isDeleting}
+            >
+              Delete Asset
+            </Button>
+          </div>
+        </div>
       </Modal>
     </div>
   );

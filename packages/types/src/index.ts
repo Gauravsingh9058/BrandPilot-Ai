@@ -155,7 +155,7 @@ export interface BrandAsset {
   height?: number;
   mimeType?: string;
   metadata?: BrandAssetMetadata;
-  createdAt: Date;
+  createdAt?: Date | string;
 }
 
 // Brand DNA Structured Intelligence Model
@@ -875,6 +875,7 @@ export interface AIGenerationOptions {
   temperature?: number;
   maxTokens?: number;
   systemInstruction?: string;
+  timeoutMs?: number;
 }
 
 export interface AITextResponse {
@@ -1629,6 +1630,7 @@ export interface VoiceOption {
 export interface VoiceConfiguration {
   voiceId: string;
   voiceName?: string;
+  gender?: 'male' | 'female' | 'neutral' | string;
   provider: string;
   style?: string;
   tone?: string;

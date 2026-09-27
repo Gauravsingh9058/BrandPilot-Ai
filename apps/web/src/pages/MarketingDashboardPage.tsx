@@ -173,7 +173,7 @@ export const MarketingDashboardPage: React.FC = () => {
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
                     <Badge variant="ready">STRATEGY READY (v{strategy.version})</Badge>
                     <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-                      Updated {new Date(strategy.updatedAt).toLocaleDateString()}
+                      Updated {new Date(strategy.updatedAt || Date.now()).toLocaleDateString()}
                     </span>
                   </div>
 

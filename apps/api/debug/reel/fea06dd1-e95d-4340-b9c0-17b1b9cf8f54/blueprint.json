@@ -1,0 +1,755 @@
+{
+  "reelPlan": {
+    "id": "fea06dd1-e95d-4340-b9c0-17b1b9cf8f54",
+    "contentJobId": "f0d3510f-9b78-4144-bb69-139ac54e1de5",
+    "brandId": "08fb56fd-6a02-4181-9168-8d7de2e593ae",
+    "campaignId": "53d1c485-fca1-494c-ba49-8b6274011fc8",
+    "contentPlanId": "54f64da2-c197-486c-93f3-03896b149dab",
+    "workspaceId": "7ac00edf-76f7-4eb3-b7fa-0fa1421ff614",
+    "version": 1,
+    "targetProductId": "a8b078eb-1f74-4ce4-9ba6-4001e3aed82b",
+    "productId": "a8b078eb-1f74-4ce4-9ba6-4001e3aed82b",
+    "title": "MuscleBlaze Biozyme Whey - Science-Backed Muscle Building",
+    "concept": {
+      "title": "Max Absorption, Max Gains",
+      "concept": "An engaging educational breakdown showing why protein absorption matters more than just protein intake, featuring Biozyme Performance Whey.",
+      "objective": "Drive awareness and educate the audience on optimal muscle building through enhanced protein absorption.",
+      "corePromise": "Maximized protein absorption for rapid recovery without bloating.",
+      "funnelStage": "AWARENESS",
+      "contentPillar": "Muscle Building",
+      "emotionalAngle": "Empowered, ambitious, and scientifically guided.",
+      "messagingAngle": "Educational breakdown highlighting enhanced Biozyme absorption for real fitness results.",
+      "targetAudience": "Young adults (18-35) in India, including gym-goers, fitness enthusiasts, and athletes seeking enhanced recovery."
+    },
+    "objective": "Drive awareness and educate audience on Muscle Building.",
+    "audience": "Young adults (18-35) in India, including gym-goers, competitive athletes, and general fitness enthusiasts seeking to build muscle, enhance performance, improve recovery, and lead an active lifestyle.",
+    "funnelStage": "AWARENESS",
+    "contentPillar": "Muscle Building",
+    "durationSeconds": 30,
+    "aspectRatio": "9:16",
+    "platform": "INSTAGRAM",
+    "format": "REEL",
+    "hook": {
+      "text": "Why MuscleBlaze is changing the standard in modern health & wellness...",
+      "type": "QUESTION",
+      "visualIntent": "Dynamic opening shot with cinematic lighting, focusing on a gym enthusiast preparing a scoop of protein.",
+      "deliveryStyle": "Energetic and authoritative tone with fast pacing.",
+      "durationSeconds": 4
+    },
+    "narrative": "A 30-second educational journey showing fitness enthusiasts that protein absorption is the secret to muscle building success, highlighting MuscleBlaze Biozyme Performance Whey.",
+    "script": [
+      {
+        "id": "seg-1",
+        "text": "Are you taking protein but still missing your muscle-building goals?",
+        "purpose": "Hook",
+        "deliveryStyle": "Direct, captivating, energetic",
+        "emotionalTone": "Curious",
+        "estimatedDuration": 4
+      },
+      {
+        "id": "seg-2",
+        "text": "The issue isn't just how much protein you drink—it's how much your body actually absorbs.",
+        "purpose": "Problem",
+        "deliveryStyle": "Informative, serious",
+        "emotionalTone": "Empathetic",
+        "estimatedDuration": 4
+      },
+      {
+        "id": "seg-3",
+        "text": "Meet MuscleBlaze Biozyme Performance Whey in Rich Chocolate.",
+        "purpose": "Product Hero",
+        "deliveryStyle": "Confident, proud",
+        "emotionalTone": "Inspiring",
+        "estimatedDuration": 5
+      },
+      {
+        "id": "seg-4",
+        "text": "Formulated with 25 grams of protein per scoop and enhanced Biozyme absorption technology.",
+        "purpose": "Feature",
+        "deliveryStyle": "Authoritative, clear",
+        "emotionalTone": "Knowledgeable",
+        "estimatedDuration": 5
+      },
+      {
+        "id": "seg-5",
+        "text": "That means rapid muscle recovery with zero bloating after your hardest workouts.",
+        "purpose": "Benefit",
+        "deliveryStyle": "Motivating, smooth",
+        "emotionalTone": "Reassuring",
+        "estimatedDuration": 5
+      },
+      {
+        "id": "seg-6",
+        "text": "Fueled by modern craftsmanship and authentic confidence.",
+        "purpose": "Brand Moment",
+        "deliveryStyle": "Inspiring, powerful",
+        "emotionalTone": "Confident",
+        "estimatedDuration": 4
+      },
+      {
+        "id": "seg-7",
+        "text": "Save this reel and follow for daily muscle-building insights!",
+        "purpose": "CTA",
+        "deliveryStyle": "Direct, strong call to action",
+        "emotionalTone": "Action-oriented",
+        "estimatedDuration": 3
+      }
+    ],
+    "scenes": [
+      {
+        "mood": "",
+        "camera": "",
+        "purpose": "Hook",
+        "subject": "Fitness athlete preparing post-workout shaker",
+        "lighting": "",
+        "narration": "Are you taking protein but still missing your muscle-building goals?",
+        "transition": "Quick cut with kinetic impact effect platform transition sound effect balance high-energy beat drop tone setup visual impact trigger momentum focus shift frame zoom burst push-in frame center focal layer point detail kinetic pulse dynamic layer rhythm flash pan entry shift focus shot depth layer track pan scale shift snap focal zoom snap point key emphasis layer boost intensity step transition motion key flow beat point zoom pop drop sync visual burst kinetic highlight impact pop jump key shot shift point cut kinetic edge beat sync impact snap transition cut frame point focus shift entry step track pan slide shift kinetic frame highlight pulse burst drop sync zoom flash entry point slide zoom center trigger scene kinetic action match jump shift focus frame punch step point depth entry focal focus dynamic action cut frame flow dynamic pop hit key frame punch fast push entry motion step focus dynamic zoom hit snap step focus scene visual match beat burst snap jump flow entry visual pop frame highlight hit step jump center cut zoom pulse focus frame pop hit transition focus snap beat step cut focus frame kinetic hit zoom step kinetic visual sync cut kinetic jump step focal point beat hit snap cut entry dynamic step sync cut snap entry snap jump focus kinetic sync entry snap drop visual entry kinetic impact boost step zoom hit frame dynamic energy shift boost kinetic action jump snapshot entry step snap visual center pop cut flow step dynamic snapshot frame focus kinetic zoom entry punch snap cut visual punch step snap drop burst cut focus sync entry point frame flash entry dynamic flow kinetic dynamic entry scene sync snap visual drop point match entry snap step visual burst hit punch step snap track visual kinetic shift point kinetic entry snap visual focus pop snap hit sync step snap frame hit dynamic flow kinetic scene kinetic entry cut point hit snapshot transition focus frame visual sync step dynamic focus scene entry point match frame kinetic sync focus drop frame kinetic visual snap flow focus sync match step visual cut kinetic focus entry frame beat match visual energy drop flow zoom sync shift dynamic snap scene point snap entry match sync drop visual flow cut snapshot step frame match snap energy pop focal jump snapshot shift point snapshot flow scene transition shift frame snap cut focus jump kinetic visual entry flow match visual step drop sync dynamic flow kinetic energy step zoom snap transition point dynamic snap entry dynamic focus snap step dynamic visual hit step sync entry match dynamic scene visual drop sync match frame pop hit snapshot visual kinetic flow match drop dynamic energy visual transition beat pop step snap flow entry match snap visual entry visual sync snap step kinetic focus transition cut snap Visual visual sync dynamic hit snap energy match focus cut snap transition flow visual match dynamic hit snap entry visual frame transition beat match sync step dynamic entry snapshot point sync dynamic visually impactful match cut entry shift.",
+        "visualType": "LIFESTYLE",
+        "composition": "",
+        "environment": "",
+        "sceneNumber": 1,
+        "onScreenText": "MISSING MUSCLE GAINS?",
+        "animationIntent": "",
+        "durationSeconds": 4,
+        "assetRequirement": "Close-up of an athlete in a dark gym setting holding a shaker bottle with bold red ambient backlighting."
+      },
+      {
+        "mood": "",
+        "camera": "",
+        "purpose": "Problem",
+        "subject": "Animated infographic highlighting protein breakdown in human digestive system",
+        "lighting": "",
+        "narration": "The issue isn't just how much protein you drink—it's how much your body actually absorbs.",
+        "transition": "Slide transition to animated kinetic graphic view",
+        "visualType": "EDUCATION",
+        "composition": "",
+        "environment": "",
+        "sceneNumber": 2,
+        "onScreenText": "PROTEIN INTAKE VS ABSORPTION",
+        "animationIntent": "",
+        "durationSeconds": 4,
+        "assetRequirement": "Side-by-side vertical graphic overlay showing digestion absorption vs non-absorption animation in dark minimalist theme."
+      },
+      {
+        "mood": "",
+        "camera": "",
+        "purpose": "Product Hero",
+        "subject": "MuscleBlaze Biozyme Performance Whey 1 kg Rich Chocolate container",
+        "lighting": "",
+        "narration": "Meet MuscleBlaze Biozyme Performance Whey in Rich Chocolate.",
+        "transition": "Dynamic whip pan transition into pristine product hero lighting showcase",
+        "visualType": "PRODUCT_SHOWCASE",
+        "composition": "",
+        "environment": "",
+        "sceneNumber": 3,
+        "onScreenText": "BIOZYME PERFORMANCE WHEY",
+        "animationIntent": "",
+        "durationSeconds": 5,
+        "assetRequirement": "3D rotation frame of MuscleBlaze Biozyme Performance Whey Rich Chocolate 1kg tub on glossy black surface with red edge lighting."
+      },
+      {
+        "mood": "",
+        "camera": "",
+        "purpose": "Feature",
+        "subject": "Protein powder dissolving rapidly with zero clumping",
+        "lighting": "",
+        "narration": "Formulated with 25 grams of protein per scoop and enhanced Biozyme absorption technology.",
+        "transition": "Match cut to close-up liquid dynamic texture shot",
+        "visualType": "DEMONSTRATION",
+        "composition": "",
+        "environment": "",
+        "sceneNumber": 4,
+        "onScreenText": "25G PROTEIN | ENHANCED ABSORPTION",
+        "animationIntent": "",
+        "durationSeconds": 5,
+        "assetRequirement": "Macro close-up shot of rich chocolate powder dissolving effortlessly in cold water inside a translucent shaker."
+      },
+      {
+        "mood": "",
+        "camera": "",
+        "purpose": "Benefit",
+        "subject": "Athlete drinking Biozyme whey comfortably post-workout",
+        "lighting": "",
+        "narration": "That means rapid muscle recovery with zero bloating after your hardest workouts.",
+        "transition": "Smooth directional wipe to gym environment lifestyle shot",
+        "visualType": "LIFESTYLE",
+        "composition": "",
+        "environment": "",
+        "sceneNumber": 5,
+        "onScreenText": "RAPID RECOVERY. ZERO BLOATING.",
+        "animationIntent": "",
+        "durationSeconds": 5,
+        "assetRequirement": "An energized athlete catching breath after an intense workout set, smiling and drinking protein comfortably without discomfort."
+      },
+      {
+        "mood": "",
+        "camera": "",
+        "purpose": "Brand Moment",
+        "subject": "MuscleBlaze Brand Logo with intense secondary red highlight beam",
+        "lighting": "",
+        "narration": "Fueled by modern craftsmanship and authentic confidence.",
+        "transition": "Zoom out into branded visual frame layout",
+        "visualType": "BRAND",
+        "composition": "",
+        "environment": "",
+        "sceneNumber": 6,
+        "onScreenText": "PERFORMANCE WITHOUT COMPROMISE",
+        "animationIntent": "",
+        "durationSeconds": 4,
+        "assetRequirement": "High contrast black and red branded endboard with MuscleBlaze crest and sleek typography."
+      },
+      {
+        "mood": "",
+        "camera": "",
+        "purpose": "CTA",
+        "subject": "Final CTA frame with product and interactive icon animations",
+        "lighting": "",
+        "narration": "Save this reel and follow for daily muscle-building insights!",
+        "transition": "Static punch end visual frame with pulsating save icon",
+        "visualType": "CTA",
+        "composition": "",
+        "environment": "",
+        "sceneNumber": 7,
+        "onScreenText": "SAVE & FOLLOW FOR DAILY INSIGHTS",
+        "animationIntent": "",
+        "durationSeconds": 3,
+        "assetRequirement": "Product hero tub sitting beside clear text callout overlay with save/follow animated button visual."
+      }
+    ],
+    "visualDirection": {
+      "mood": "energetic",
+      "style": "High-contrast cinematic gym aesthetic with clean modern product macro highlights.",
+      "pacing": "fast-paced",
+      "colorIntent": "brand-aligned",
+      "composition": "vertical centered",
+      "cameraLanguage": "dynamic cuts and smooth motion",
+      "lightingIntent": "bright clean",
+      "productEmphasis": "hero product visibility",
+      "visualHierarchy": "Bold kinetic title text on top third, subject product/athlete frame-center, branding bottom third zone clean layout setup safe for Instagram 9:16 vertical reels interface boundaries frame clear contrast layer points structure depth alignment standard UI clean safe margin clear safe areas visual bounds grid structure hierarchy layout clean clear setup style depth look accent highlight dynamic motion clarity emphasis line focus center drop line grid focus alignment baseline balance presentation standards look feel clarity dynamic look outline grid baseline composition zone look layout clean setup format pattern visual layout hierarchy zone standard format visual composition design frame format layer presentation look line standard pattern structural zone profile baseline structure view framework format clear visualization concept pattern aesthetic frame dynamic styling presentation blueprint line design look format template visually impactful layout style standard context visually precise layout arrangement format view baseline line structure grid presentation clean arrangement bounds context profile alignment standard look format dynamic layout design depth structure pattern visual bounds format profile layout baseline structure format aesthetic design framework standard dynamic look profile layout format blueprint visually pristine depth look layout profile design alignment clean presentation format boundary visual grid frame look visualization format aesthetic framework profile style view profile standard look design layout structure pattern grid visual context design alignment visual baseline framework format boundary pattern layout profile blueprint structure design layout presentation look pattern framework dynamic aesthetic design format baseline layout grid visualization boundary context structure framework design alignment clean baseline format layout design structure baseline standard context pattern alignment framework layout presentation visual layout blueprint framework boundary design baseline style context visualization pattern alignment layout design format framework profile baseline layout visually clean baseline presentation framework layout alignment context framework blueprint visual design style layout baseline context framework setup standard alignment view format visual design aesthetic context boundary profile framework layout design baseline pattern frame look visualization template layout clean setup baseline context dynamic format design profile alignment framework baseline layout framework visualization blueprint design context pattern alignment visually clean layout baseline format setup aesthetic look pattern design visual layout context profile blueprint visual design baseline presentation framework baseline format setup look framework presentation alignment visualization blueprint baseline framework setup layout visual context pattern standard look baseline profile presentation framework layout style template visual layout baseline context blueprint format alignment design framework baseline layout format visual visualization baseline context pattern visual frame presentation profile style template framework baseline visual layout baseline presentation style dynamic clean look format baseline context visualization framework format alignment layout profile blueprint visual presentation look baseline context framework template design format visual context baseline pattern alignment layout framework setup baseline look format visualization pattern frame alignment blueprint design baseline presentation framework visual context baseline layout setup style look framework alignment visualization layout context framework design baseline look layout format blueprint visualization context alignment framework layout presentation style context format visual layout baseline pattern alignment dynamic visuals design layout baseline profile context framework standard visualization profile layout setup baseline look visual layout design context visual format baseline blueprint presentation framework visual alignment setup framework visual context layout baseline pattern visualization visual presentation layout context setup design framework profile visualization baseline layout context baseline setup look format visually clean design profile framework presentation baseline context visualization alignment framework visual setup layout baseline context framework blueprint visualization format profile visual design presentation context layout baseline framework setup design visual layout context presentation profile alignment framework visualization layout baseline pattern context framework presentation format visual design context visual alignment profile layout setup baseline visualization blueprint profile context framework layout visually standard format presentation pattern framework visual setup layout baseline context profile framework setup visual design layout presentation context visual blueprint framework setup baseline context profile visualization pattern layout dynamic setup visual presentation visual alignment framework layout context visual layout dynamic profile blueprint setup visual presentation layout framework baseline visual context pattern visual setup layout framework visualization dynamic setup presentation context format profile setup layout baseline visual presentation pattern setup framework visual context visual layout blueprint framework setup layout visually dynamic setup presentation visual format profile framework baseline layout setup visual context pattern layout visual setup framework visualization setup dynamic presentation context visual alignment baseline setup framework presentation context visual layout baseline pattern visual setup framework visual context setup visual visualization format setup layout baseline visual alignment presentation frame context blueprint pattern baseline visual setup framework visualization presentation context format visual layout baseline pattern setup visual presentation context baseline layout setup framework visual visualization baseline context profile setup framework layout visual presentation visual setup framework setup visualization layout context blueprint format alignment visualization profile setup visual layout context presentation framework baseline visual format setup layout context framework visual visualization baseline setup presentation visual alignment context visual layout blueprint pattern visual setup baseline framework presentation visual alignment context visual layout pattern visually dynamic setup visual visualization format context profile setup layout baseline visual presentation framework baseline visual setup layout context visual pattern visualization setup framework layout visually standard format presentation visual context baseline alignment layout setup framework visualization format profile layout baseline visual presentation context layout framework setup visual visualization pattern baseline format visual layout setup framework presentation visual context baseline alignment framework visual visualization format context layout setup framework visually standard format presentation profile alignment framework layout baseline visual presentation context visual layout setup framework visualization baseline setup layout context visual pattern layout setup framework visualization profile baseline format visual alignment context visual setup framework visualization pattern profile baseline visual layout context visual presentation framework visual setup baseline layout context visualization pattern layout setup framework visualization profile format alignment visual layout context framework setup visual presentation context visual layout setup framework visualization baseline format layout context profile framework setup visual presentation context visual layout dynamic framework setup visualization layout context baseline setup visual framework format visual presentation setup framework visualization layout context baseline setup visual framework layout visual presentation context visual layout dynamic framework setup visual asset guidelines layout visual balance design template.",
+      "brandIntegration": "subtle logo placement in key moments"
+    },
+    "voiceDirection": {
+      "pace": "Energetic, clear, and steady",
+      "tone": "Confident, motivating, knowledgeable",
+      "style": "Conversational yet authoritative fitness coach tone",
+      "accents": "Indian English (fluent, neutral, authentic)",
+      "language": "en-US",
+      "genderPreference": "MALE"
+    },
+    "captionDirection": {
+      "style": "Modern minimalist clean dynamic subtitle look",
+      "density": "High readability, maximum 3-4 words per frame slice",
+      "animation": "Word-by-word kinetic pulse pop with color shift on key action words",
+      "placement": "Center-lower third visual text clearance zone",
+      "fontEmphasis": "Primary white text with bold secondary red (#E31E24) word highlights"
+    },
+    "animationDirection": {
+      "style": "Modern sports science dynamic visual overlay",
+      "energy": "High kinetic energy",
+      "elementMotion": "Smooth floating graphics with glowing red pulse rings",
+      "textAnimation": "Pop-in kinetic typography with smooth decay easing",
+      "visualTransitions": "Dynamic speed ramps and whip pans between scenes"
+    },
+    "audioDirection": {
+      "pacing": "Fast and punchy matching 128 BPM electronic rhythm",
+      "musicMood": "Driving, energetic, inspiring workout beat",
+      "mixBalance": "Voiceover primary (60%), upbeat gym electronic beat secondary (35%), sound effects (5%)",
+      "soundEffects": "Whoosh transitions, kinetic text pop clicks, low sub bass drops"
+    },
+    "cta": {
+      "url": null,
+      "text": "Save this reel & follow for daily insights",
+      "type": "SAVE",
+      "placement": "Bottom center screen overlay with animated callout icon",
+      "visualTreatment": "Glowing red button badge with prominent save icon graphic"
+    },
+    "productionMetadata": {
+      "campaignId": "53d1c485-fca1-494c-ba49-8b6274011fc8",
+      "generatedAt": "2026-09-27T10:44:25.525Z",
+      "generatedBy": "VidSnapAI Reel Orchestrator v5.0",
+      "totalScenes": 7,
+      "contentJobId": "f0d3510f-9b78-4144-bb69-139ac54e1de5",
+      "renderOutput": {
+        "jobId": "render_fea06dd1-e95d-4340-b9c0-17b1b9cf8f54_1790505884690",
+        "status": "FAILED",
+        "renderedAt": "2026-09-27T10:44:44.690Z",
+        "completedAt": "2026-09-27T10:45:45.161Z",
+        "diagnostics": {
+          "renderId": "render_fea06dd1-e95d-4340-b9c0-17b1b9cf8f54_1790505884690",
+          "failureReason": "FFmpeg exited with code 4294967274:  EOF\r\n[aost#0:1/aac @ 000001eb1e6b2d00] Task finished with error: Invalid argument\r\n[aost#0:1/aac @ 000001eb1e6b2d00] Terminating thread with error: Invalid argument\r\n[vost#0:0/libx264 @ 000001eb207953c0] Terminating thread with error: Invalid argument\r\n[out#0/mp4 @ 000001eb2043a280] Nothing was written into output file, because at least one of its streams received no packets.\r\nframe=    0 fps=0.0 q=0.0 Lsize=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.38    \r\nConversion failed!\r\n"
+        },
+        "errorMessage": "FFmpeg exited with code 4294967274:  EOF\r\n[aost#0:1/aac @ 000001eb1e6b2d00] Task finished with error: Invalid argument\r\n[aost#0:1/aac @ 000001eb1e6b2d00] Terminating thread with error: Invalid argument\r\n[vost#0:0/libx264 @ 000001eb207953c0] Terminating thread with error: Invalid argument\r\n[out#0/mp4 @ 000001eb2043a280] Nothing was written into output file, because at least one of its streams received no packets.\r\nframe=    0 fps=0.0 q=0.0 Lsize=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.38    \r\nConversion failed!\r\n",
+        "outputVideoUrl": "",
+        "durationSeconds": 30
+      },
+      "warningFlags": [],
+      "brandDnaVersion": 2,
+      "complianceNotes": [],
+      "targetProductId": "a8b078eb-1f74-4ce4-9ba6-4001e3aed82b",
+      "estimatedWordCount": 74,
+      "marketingStrategyId": "30e1555f-2a78-4c1f-b1d5-ee621206a633",
+      "targetDurationSeconds": 30,
+      "calculatedDurationSeconds": 30
+    },
+    "status": "FAILED",
+    "renderOutput": {
+      "jobId": "render_fea06dd1-e95d-4340-b9c0-17b1b9cf8f54_1790505884690",
+      "status": "FAILED",
+      "renderedAt": "2026-09-27T10:44:44.690Z",
+      "completedAt": "2026-09-27T10:45:45.161Z",
+      "diagnostics": {
+        "renderId": "render_fea06dd1-e95d-4340-b9c0-17b1b9cf8f54_1790505884690",
+        "failureReason": "FFmpeg exited with code 4294967274:  EOF\r\n[aost#0:1/aac @ 000001eb1e6b2d00] Task finished with error: Invalid argument\r\n[aost#0:1/aac @ 000001eb1e6b2d00] Terminating thread with error: Invalid argument\r\n[vost#0:0/libx264 @ 000001eb207953c0] Terminating thread with error: Invalid argument\r\n[out#0/mp4 @ 000001eb2043a280] Nothing was written into output file, because at least one of its streams received no packets.\r\nframe=    0 fps=0.0 q=0.0 Lsize=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.38    \r\nConversion failed!\r\n"
+      },
+      "errorMessage": "FFmpeg exited with code 4294967274:  EOF\r\n[aost#0:1/aac @ 000001eb1e6b2d00] Task finished with error: Invalid argument\r\n[aost#0:1/aac @ 000001eb1e6b2d00] Terminating thread with error: Invalid argument\r\n[vost#0:0/libx264 @ 000001eb207953c0] Terminating thread with error: Invalid argument\r\n[out#0/mp4 @ 000001eb2043a280] Nothing was written into output file, because at least one of its streams received no packets.\r\nframe=    0 fps=0.0 q=0.0 Lsize=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.38    \r\nConversion failed!\r\n",
+      "outputVideoUrl": "",
+      "durationSeconds": 30
+    },
+    "outputVideoUrl": "",
+    "createdAt": "2026-09-27T10:44:26.194Z",
+    "updatedAt": "2026-09-27T10:45:45.914Z"
+  },
+  "spec": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "totalDurationSeconds": 30,
+    "aspectRatio": "9:16",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "startTime": 0,
+        "endTime": 4,
+        "duration": 4,
+        "mediaUrl": "https://videos.pexels.com/video-files/30197463/12947817_360_640_30fps.mp4",
+        "mediaType": "VIDEO",
+        "backgroundColor": "#6366F1",
+        "camera": [
+          {
+            "type": "SLOW_PUSH",
+            "scale": 1.08,
+            "easing": "CUBIC_OUT",
+            "duration": 4,
+            "direction": "IN",
+            "intensity": "MEDIUM",
+            "startTime": 0,
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          }
+        ],
+        "textAnimations": [
+          {
+            "exit": "FADE",
+            "easing": "SPRING",
+            "stagger": 0.12,
+            "duration": 3.6,
+            "emphasis": "SCALE_EMPHASIS",
+            "entrance": "WORD_POP",
+            "startTime": 0.2,
+            "targetText": "MISSING MUSCLE GAINS?",
+            "emphasisWords": []
+          }
+        ],
+        "productAnimations": [],
+        "logoAnimations": [],
+        "transitionOut": {
+          "type": "LIGHT_WIPE",
+          "easing": "CUBIC_OUT",
+          "toScene": 2,
+          "duration": 0.4,
+          "fromScene": 1,
+          "intensity": "MEDIUM",
+          "rationale": "Luminous solution reveal"
+        },
+        "syncCues": [],
+        "background": {
+          "type": "AMBIENT_BLUR",
+          "primaryColor": "#6366F1",
+          "secondaryColor": "#EC4899"
+        },
+        "product": {
+          "visible": true,
+          "animationPreset": "CINEMATIC_PUSH_IN"
+        }
+      },
+      {
+        "sceneNumber": 2,
+        "startTime": 4,
+        "endTime": 8,
+        "duration": 4,
+        "mediaUrl": "https://videos.pexels.com/video-files/5838997/5838997-hd_1080_1920_24fps.mp4",
+        "mediaType": "VIDEO",
+        "backgroundColor": "#6366F1",
+        "camera": [
+          {
+            "type": "PAN_LEFT",
+            "scale": 1.04,
+            "easing": "LINEAR",
+            "duration": 4,
+            "direction": "LEFT",
+            "intensity": "LOW",
+            "startTime": 4,
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          }
+        ],
+        "textAnimations": [
+          {
+            "exit": "FADE",
+            "easing": "SPRING",
+            "stagger": 0.12,
+            "duration": 3.6,
+            "emphasis": "SCALE_EMPHASIS",
+            "entrance": "WORD_POP",
+            "startTime": 4.2,
+            "targetText": "PROTEIN INTAKE VS ABSORPTION",
+            "emphasisWords": []
+          }
+        ],
+        "productAnimations": [],
+        "logoAnimations": [],
+        "transitionOut": {
+          "type": "CROSSFADE",
+          "easing": "CUBIC_IN_OUT",
+          "toScene": 3,
+          "duration": 0.35,
+          "fromScene": 2,
+          "intensity": "MEDIUM",
+          "rationale": "Smooth visual continuation"
+        },
+        "syncCues": [],
+        "background": {
+          "type": "AMBIENT_BLUR",
+          "primaryColor": "#6366F1",
+          "secondaryColor": "#EC4899"
+        },
+        "product": {
+          "visible": true,
+          "animationPreset": "CINEMATIC_PUSH_IN"
+        }
+      },
+      {
+        "sceneNumber": 3,
+        "startTime": 8,
+        "endTime": 13,
+        "duration": 5,
+        "mediaUrl": "https://imgs.search.brave.com/j0HXsSmFLpekHuMqaghAzHZSiktTiEyQnzgvvSmpV6Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFHdXNuK3VteEwu/anBn",
+        "mediaType": "PRODUCT_IMAGE",
+        "backgroundColor": "#6366F1",
+        "camera": [
+          {
+            "type": "PAN_LEFT",
+            "scale": 1.04,
+            "easing": "LINEAR",
+            "duration": 5,
+            "direction": "LEFT",
+            "intensity": "LOW",
+            "startTime": 8,
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          }
+        ],
+        "textAnimations": [
+          {
+            "exit": "FADE",
+            "easing": "SPRING",
+            "stagger": 0.12,
+            "duration": 4.6,
+            "emphasis": "SCALE_EMPHASIS",
+            "entrance": "WORD_POP",
+            "startTime": 8.2,
+            "targetText": "BIOZYME PERFORMANCE WHEY",
+            "emphasisWords": []
+          }
+        ],
+        "productAnimations": [
+          {
+            "duration": 4.8,
+            "emphasis": true,
+            "startTime": 8.1,
+            "revealType": "HERO_REVEAL",
+            "scaleIntent": 1.15,
+            "isHeroMoment": true,
+            "positionIntent": "center",
+            "highlightIntent": true,
+            "backgroundTreatment": "RADIAL_DIM"
+          }
+        ],
+        "logoAnimations": [],
+        "transitionOut": {
+          "type": "CROSSFADE",
+          "easing": "CUBIC_IN_OUT",
+          "toScene": 4,
+          "duration": 0.35,
+          "fromScene": 3,
+          "intensity": "MEDIUM",
+          "rationale": "Smooth visual continuation"
+        },
+        "syncCues": [],
+        "background": {
+          "type": "AMBIENT_BLUR",
+          "primaryColor": "#6366F1",
+          "secondaryColor": "#EC4899"
+        },
+        "product": {
+          "visible": true,
+          "animationPreset": "CINEMATIC_PUSH_IN"
+        }
+      },
+      {
+        "sceneNumber": 4,
+        "startTime": 13,
+        "endTime": 18,
+        "duration": 5,
+        "mediaUrl": "https://videos.pexels.com/video-files/7904865/7904865-hd_720_1280_25fps.mp4",
+        "mediaType": "VIDEO",
+        "backgroundColor": "#6366F1",
+        "camera": [
+          {
+            "type": "PAN_LEFT",
+            "scale": 1.04,
+            "easing": "LINEAR",
+            "duration": 5,
+            "direction": "LEFT",
+            "intensity": "LOW",
+            "startTime": 13,
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          }
+        ],
+        "textAnimations": [
+          {
+            "exit": "FADE",
+            "easing": "SPRING",
+            "stagger": 0.12,
+            "duration": 4.6,
+            "emphasis": "SCALE_EMPHASIS",
+            "entrance": "WORD_POP",
+            "startTime": 13.2,
+            "targetText": "25G PROTEIN | ENHANCED ABSORPTION",
+            "emphasisWords": []
+          }
+        ],
+        "productAnimations": [],
+        "logoAnimations": [],
+        "transitionOut": {
+          "type": "CROSSFADE",
+          "easing": "CUBIC_IN_OUT",
+          "toScene": 5,
+          "duration": 0.35,
+          "fromScene": 4,
+          "intensity": "MEDIUM",
+          "rationale": "Smooth visual continuation"
+        },
+        "syncCues": [],
+        "background": {
+          "type": "AMBIENT_BLUR",
+          "primaryColor": "#6366F1",
+          "secondaryColor": "#EC4899"
+        },
+        "product": {
+          "visible": true,
+          "animationPreset": "CINEMATIC_PUSH_IN"
+        }
+      },
+      {
+        "sceneNumber": 5,
+        "startTime": 18,
+        "endTime": 23,
+        "duration": 5,
+        "mediaUrl": "https://videos.pexels.com/video-files/35585785/15080008_360_640_30fps.mp4",
+        "mediaType": "VIDEO",
+        "backgroundColor": "#6366F1",
+        "camera": [
+          {
+            "type": "PAN_LEFT",
+            "scale": 1.04,
+            "easing": "LINEAR",
+            "duration": 5,
+            "direction": "LEFT",
+            "intensity": "LOW",
+            "startTime": 18,
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          }
+        ],
+        "textAnimations": [
+          {
+            "exit": "FADE",
+            "easing": "SPRING",
+            "stagger": 0.12,
+            "duration": 4.6,
+            "emphasis": "SCALE_EMPHASIS",
+            "entrance": "WORD_POP",
+            "startTime": 18.2,
+            "targetText": "RAPID RECOVERY. ZERO BLOATING.",
+            "emphasisWords": []
+          }
+        ],
+        "productAnimations": [],
+        "logoAnimations": [],
+        "transitionOut": {
+          "type": "CROSSFADE",
+          "easing": "CUBIC_IN_OUT",
+          "toScene": 6,
+          "duration": 0.35,
+          "fromScene": 5,
+          "intensity": "MEDIUM",
+          "rationale": "Smooth visual continuation"
+        },
+        "syncCues": [],
+        "background": {
+          "type": "AMBIENT_BLUR",
+          "primaryColor": "#6366F1",
+          "secondaryColor": "#EC4899"
+        },
+        "product": {
+          "visible": true,
+          "animationPreset": "CINEMATIC_PUSH_IN"
+        }
+      },
+      {
+        "sceneNumber": 6,
+        "startTime": 23,
+        "endTime": 27,
+        "duration": 4,
+        "mediaUrl": "https://videos.pexels.com/video-files/35585641/15079679_360_640_30fps.mp4",
+        "mediaType": "VIDEO",
+        "backgroundColor": "#6366F1",
+        "camera": [
+          {
+            "type": "PAN_LEFT",
+            "scale": 1.04,
+            "easing": "LINEAR",
+            "duration": 4,
+            "direction": "LEFT",
+            "intensity": "LOW",
+            "startTime": 23,
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          }
+        ],
+        "textAnimations": [
+          {
+            "exit": "FADE",
+            "easing": "SPRING",
+            "stagger": 0.12,
+            "duration": 3.6,
+            "emphasis": "SCALE_EMPHASIS",
+            "entrance": "WORD_POP",
+            "startTime": 23.2,
+            "targetText": "PERFORMANCE WITHOUT COMPROMISE",
+            "emphasisWords": []
+          }
+        ],
+        "productAnimations": [],
+        "logoAnimations": [],
+        "transitionOut": {
+          "type": "CROSSFADE",
+          "easing": "CUBIC_IN_OUT",
+          "toScene": 7,
+          "duration": 0.35,
+          "fromScene": 6,
+          "intensity": "MEDIUM",
+          "rationale": "Smooth visual continuation"
+        },
+        "syncCues": [],
+        "background": {
+          "type": "AMBIENT_BLUR",
+          "primaryColor": "#6366F1",
+          "secondaryColor": "#EC4899"
+        },
+        "product": {
+          "visible": true,
+          "animationPreset": "CINEMATIC_PUSH_IN"
+        }
+      },
+      {
+        "sceneNumber": 7,
+        "startTime": 27,
+        "endTime": 30,
+        "duration": 3,
+        "mediaUrl": "https://videos.pexels.com/video-files/39701662/16927206_360_640_60fps.mp4",
+        "mediaType": "VIDEO",
+        "backgroundColor": "#6366F1",
+        "camera": [
+          {
+            "type": "STATIC",
+            "scale": 1,
+            "easing": "LINEAR",
+            "duration": 3,
+            "intensity": "LOW",
+            "startTime": 27,
+            "focalPoint": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          }
+        ],
+        "textAnimations": [
+          {
+            "exit": "NONE",
+            "easing": "SPRING",
+            "stagger": 0.05,
+            "duration": 2.5,
+            "emphasis": "PULSE",
+            "entrance": "EMPHASIS_PULSE",
+            "startTime": 27.3,
+            "targetText": "SAVE & FOLLOW FOR DAILY INSIGHTS",
+            "emphasisWords": []
+          }
+        ],
+        "productAnimations": [],
+        "logoAnimations": [
+          {
+            "scale": 1.1,
+            "style": "SCALE",
+            "easing": "SPRING",
+            "opacity": 1,
+            "duration": 2.2,
+            "position": "center",
+            "startTime": 27.5
+          }
+        ],
+        "syncCues": [],
+        "background": {
+          "type": "AMBIENT_BLUR",
+          "primaryColor": "#6366F1",
+          "secondaryColor": "#EC4899"
+        },
+        "product": {
+          "visible": true,
+          "animationPreset": "CINEMATIC_PUSH_IN"
+        }
+      }
+    ],
+    "audio": {
+      "sfxTracks": [],
+      "ducking": {
+        "enabled": false,
+        "musicAttenuationDb": 14,
+        "attackMs": 200,
+        "releaseMs": 500
+      }
+    },
+    "brand": {
+      "primaryColor": "#6366F1",
+      "secondaryColor": "#EC4899",
+      "accentColor": "#3B82F6",
+      "fontFamily": "Outfit"
+    },
+    "reducedMotion": false
+  }
+}
